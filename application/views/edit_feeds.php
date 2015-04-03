@@ -29,7 +29,7 @@ foreach($css_files as $file): ?>
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-             <h2>Edit rssfeed</h2>
+             <h2>Manage feeds</h2>
 <p>Edit your feed sources</p>
                 </div>
                 

@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-               <h1>All my feeds</h1>
+               <h1>All feeds</h1>
                 </div>
                 
             </div>
@@ -18,19 +18,42 @@
           <?php }
           
           ?>
-          <ol>
+          
+         <div class="col-md-7">
+              
+         
+                            
+			                
+             
+       
+          
+         
                              <?php
 				foreach ($feeds as $value){ ?>
-                                   <li>  <p> 
-                                <img src="<?=base_url();?>img/rss.png" width="45" height="30" class="img-circle" />
-                                   
-				   <a href="<?=base_url();?>user/single_feed/<?=$value['id']?>"><?=$value['link']?></a> </p>
-				</p> <p><?=$value['description']?></p>
-                                </li>
+                                  <div class="chat-panel panel panel-default chat-boder chat-panel-head">
+                        <div class="panel-heading"> <i class="glyphicon glyphicon-flag"></i>
+                           <? if(!empty($value['title'])){
+                                    echo $value['title'];
+                                }else{
+                                    echo "No name";
+                                }
+                            ?>
+                           </div>
+                            <div class="panel-body">
+                            <div class="left clearfix">
+                            <div class="chat-body">  
+                                   <span class="glyphicon glyphicon-link"></span>
+				   <a href="<?=base_url();?>index.php/user/single_feed/<?=$value['id']?>"><?=$value['link']?></a> 
+                                
+                
+                        </div>
+                            </div>
+				             </div>
+                            </div>        
                                 <?php }
 				?> 
                       
-          </ul>         
+                 </div> 
 </div>
  
          

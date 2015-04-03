@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-               <h1>Posts</h1>
+               <h1>News posts</h1>
                 </div>
                 
             </div>
@@ -14,9 +14,9 @@
  <div class="container" style="padding-top: 100px;">
            
            <?php if(!isset($rss) || empty($rss)) { ?>
-           <p> Here is not feeds !!! </p>
+           <center><h3> Here is no posts !!! </h3></center>
           <?php }else {  ?>
-          <p>To refresh posts, please click here   <a href="<?=base_url();?>user/refresh_posts/<?=$rss[0]['feeds_id']?>"><span class="glyphicon glyphicon-refresh"></span></a></p>
+          <p>To refresh posts, please click here   <a href="<?=base_url();?>index.php/user/refresh_posts/<?=$rss[0]['feeds_id']?>"><span class="glyphicon glyphicon-refresh"></span></a></p>
                       <?php } ?>
                       
                       

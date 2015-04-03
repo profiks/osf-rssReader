@@ -6,33 +6,31 @@ class Feeds_model extends CI_Model{
     
         
     
-        function get_favourite_sources(){
-        
-        }
-    
-    
-                /**
-		* 
-		* @param int $start initial post id
-		* @param int $num the last post id
+            
+       /*
+        * Stared sources
 		* @return array posts in assoc array
 		*/
-	       function get_feeds_sources($id,$favourite=1){	
+	       function get_favourite_sources(){	
                     
                     $this->db->select('*');
                     $this->db->from('feeds'); 
-                    $this->db->where("users_id",$id);
-		    $this->db->where("favourite",$favourite);
-		    $this->db->order_by('id','desc');
+		            $this->db->where("favourite",1);
+		            $this->db->order_by('id','desc');
                     $query = $this->db->get();
                     return $query->result_array();	       
 	       }
 	       
-	       function get_all_feeds($user){
-		    $this->db->select('*');
+    
+    
+         /*
+         * All feeds sources
+		 * @return array posts in assoc arraysing
+		 */
+	       function get_all_feeds(){
+		            $this->db->select('*');
                     $this->db->from('feeds'); 
-                    $this->db->where("users_id",$user);
-		    $this->db->order_by('id','desc');
+		            $this->db->order_by('id','desc');
                     $query = $this->db->get();
                     return $query->result_array();
 	       }

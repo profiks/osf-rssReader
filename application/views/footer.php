@@ -12,9 +12,10 @@
         </div>
     </footer><!--/#footer-->
 
-    <script src="<?=base_url();?>assets/js/jquery.js"></script>
+    <script src="<?=base_url();?>assets/js/jquery-2.1.0.min.js"></script>
     <script src="<?=base_url();?>assets/js/bootstrap.min.js"></script>
     <script src="<?=base_url();?>assets/js/jquery.prettyPhoto.js"></script>
+    <script src="<?=base_url();?>assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="<?=base_url();?>assets/js/main.js"></script>
 </body>
 </html>

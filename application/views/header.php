@@ -8,6 +8,7 @@
     <link href="<?=base_url();?>assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="<?=base_url();?>assets/css/prettyPhoto.css" rel="stylesheet">
     <link href="<?=base_url();?>assets/css/animate.css" rel="stylesheet">
+    <link href="<?=base_url();?>assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" >
     <link href="<?=base_url();?>assets/css/main.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="<?=base_url();?>assets/js/html5shiv.js"></script>

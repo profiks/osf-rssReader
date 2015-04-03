@@ -10,42 +10,25 @@ class User extends CI_controller {
 	function __construct()
 	{
 		parent::__construct();
-		
-				
-		
 		$this->load->library('grocery_CRUD');
 		$this->load->model('feeds_model');
 		$this->load->library('form_validation');
 		$this->load->library('rssparser');
 		$this->load->helper('form');
-		
-		
-		
-		
-		
 	}
 	
 	
 	public function index()
-	{
-		
-		$data['title']="Welcome";
-		
-		 
-		 $data['favourite']= $this->feeds_model->get_favourite_sources();
-		/**
-		 *@todo load feeds by id
-		*/
-		
-		
+	{		
+		$data['title']="Welcome";		 
+        $data['favourite']= $this->feeds_model->get_favourite_sources();
 		$this->load->view('header',$data);
 		$this->load->view('nav');
 		$this->load->view('main_page',$data);
 		$this->load->view('footer');
 	}
 	
-	function add_feed(){
-			
+	function add_feed(){			
 		
 		$this->form_validation->set_rules('url', "Url", 'required|xss_clean|min_length[10]|trim');
 		
@@ -53,7 +36,6 @@ class User extends CI_controller {
 			
 			$feed['link'] =  $_POST['url'];
 			$feed['thumbnail'] = NULL;
-			$feed['description'] = NULL;
 			$feed['favourite'] = 0;
 			
 			
@@ -80,26 +62,19 @@ class User extends CI_controller {
 		
 		
 		
-	public function edit_feeds($id=null)
+	public function edit_feeds()
 	{
-		if (!$this->ion_auth->logged_in() || (!$this->ion_auth->is_admin() && !($this->ion_auth->user()->row()->id == $id)))
-		{
-			show_404();
-		}		
-		if(!isset($id)){
-			show_404();
-		}
 		
 		try{
 			$crud = new grocery_CRUD();
 
-			$crud->set_theme('twitter-bootstrap');
+			//$crud->set_theme('twitter-bootstrap');
 			
-			$crud->where('users_id',$id);	
+			//$crud->where('users_id',$id);	
 			$crud->set_table('feeds');
-			$crud->columns('link','description','favourite');
-			$crud->fields('link','description','users_id','favourite');
-			$crud->change_field_type('users_id', 'hidden', $id);			
+			$crud->columns('link','title','favourite');
+			$crud->fields('link','title','favourite');
+			//$crud->change_field_type('users_id', 'hidden', $id);			
 			
 			
 
@@ -125,13 +100,8 @@ class User extends CI_controller {
 	 *@todo check for sql/xss injections
 	 */
        
-        function single_feed($feed_id = null,$page=null){
-		$user = $this->session->userdata('user_id');
-		
-		if (!$this->ion_auth->logged_in() || !($this->ion_auth->user()->row()->id == $user))
-		{
-			show_404();
-		}		
+        function single_feed($feed_id = null){		
+				
 		if(!isset($feed_id)) {
 			show_404();
 		}
@@ -141,13 +111,12 @@ class User extends CI_controller {
 	$data['title'] = "Single";	
 	$data['rss'] = $this->feeds_model->rss_posts($feed_id);
 	
-	$this->load->model('page_view_model');
-	$this->page_view_model->fetch_increment($feed_id);		
+		
 			
 			
 	$this->load->library('pagination'); 
 	$config = array(); 
-	$config["base_url"] = base_url()."user/single_feed/{$feed_id}/";
+	$config["base_url"] = base_url()."index.php/user/single_feed/{$feed_id}/";
 	 $config['total_rows'] = count($data['rss']);	
 	 $config["per_page"] = 10; 
 	 $config["uri_segment"] = 4; 
@@ -179,32 +148,22 @@ class User extends CI_controller {
 			
 			
 			
-	$this->load->view('templates/header',$data);
-	$this->load->view('templates/nav');
+	$this->load->view('header',$data);
+	$this->load->view('nav');
 	$this->load->view('single',$data);
-	$this->load->view('templates/footer');
+	$this->load->view('footer');
 	    
         }	
 	
 	
 	
 	function all_feeds(){
-		
-		
-		
 		$data['title'] = "My feeds";
-		$user = $this->session->userdata('user_id');
-		if (!$this->ion_auth->logged_in() ||  !($this->ion_auth->user()->row()->id == $user))
-		{
-			show_404();
-		}
-	
-	$data['feeds'] = $this->feeds_model->get_all_feeds($user);
-	
-	$this->load->view('templates/header',$data);
-	$this->load->view('templates/nav');
-	$this->load->view('all_feeds',$data);
-	$this->load->view('templates/footer');
+		$data['feeds'] = $this->feeds_model->get_all_feeds();
+        $this->load->view('header',$data);
+        $this->load->view('nav');
+        $this->load->view('all_feeds',$data);
+        $this->load->view('footer');
 		
 	}
 	
@@ -237,7 +196,7 @@ class User extends CI_controller {
 	}
 	
 	
-	function _get_csrf_nonce()
+	/*function _get_csrf_nonce()
 	{
 		$this->load->helper('string');
 		$key   = random_string('alnum', 8);
@@ -246,9 +205,9 @@ class User extends CI_controller {
 		$this->session->set_flashdata('csrfvalue', $value);
 
 		return array($key => $value);
-	}
+	}*/
 
-	function _valid_csrf_nonce()
+	/*function _valid_csrf_nonce()
 	{
 		if ($this->input->post($this->session->flashdata('csrfkey')) !== FALSE &&
 			$this->input->post($this->session->flashdata('csrfkey')) == $this->session->flashdata('csrfvalue'))
@@ -259,7 +218,7 @@ class User extends CI_controller {
 		{
 			return FALSE;
 		}
-	}
+	}*/
 
 	function _render_page($view, $data=null, $render=false)
 	{

@@ -1,9 +1,9 @@
  <section id="title" class="emerald">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-12">
                <div class="clearfix"></div>
-                    <h2 class="section-heading">Age RSS News Feeds</h2>
+                    <h2 class="section-heading">RSS News Feeds</h2>
                     <p class="lead">Really Simple Syndication (RSS) is an XML-based format for news
 		    distribution that includes headlines, summaries and links back to a publisher website
 		    for the full article. You load RSS news feeds into a reader or visit them on
@@ -26,11 +26,12 @@
 
 	
             <div class="row">
+               <hr class="section-heading-spacer">
                 <div class="col-lg-6 col-sm-6">
 		    
-                    <hr class="section-heading-spacer">
+                    
 			
-			 <div class="chat-panel panel panel-default chat-boder chat-panel-head" >
+			 <div class="chat-panel panel panel-default chat-boder chat-panel-head" id="customScrollbar">
                         <div class="panel-heading">
                             <i class="glyphicon glyphicon-star"></i>
                             Favourites Feeds
@@ -42,18 +43,22 @@
                         <div class="panel-body">
                            
                                 <div class="left clearfix">
-            <div class="chat-body" style="height: 200px; overflow: scroll;">  
-				    
+            <div class="chat-body mCustomScrollbar" id="scrolling" data-mcs-theme="dark" style="height:200px;">  
+				 
                                                                       
                                        <?php
 				foreach ($favourite as $value){ ?>
 				<p> 
-                                <img src="<?=base_url();?>img/rss.png" width="45" height="30" class="img-circle" />
+                     
+                                  <h4><?=$value['title']?></h4>        
                                    
-				   <a href="<?=base_url();?>user/single_feed/<?=$value['id']?>"><?=$value['link']?></a> </p>
+				   <a href="<?=base_url();?>index.php/user/single_feed/<?=$value['id']?>"><?=$value['link']?></a> </p>
 				<?php }
 				?>
-                                    </div>
+                                   
+                                   
+               
+                                      </div>
                                 </div>
 				
 				
@@ -84,9 +89,7 @@ echo anchor_popup('user/edit_feeds/', 'Manage feeds', $atts);
 <!--/#title-->
                    
                 </div>
-                <div class="col-lg-4 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="<?=base_url();?>img/rss-reader.png" alt="">
-                </div>
+                
             </div>
 
         </div>
