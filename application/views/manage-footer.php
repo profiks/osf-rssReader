@@ -17,6 +17,7 @@
     <script src="<?=base_url();?>assets/js/jquery.prettyPhoto.js"></script>
     <script src="<?=base_url();?>assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="<?=base_url();?>assets/js/jquery.validate.min.js"></script>
-    <script src="<?=base_url();?>assets/js/main.js"></script> 
+    <script src="<?=base_url();?>assets/js/main.js"></script>
+    <script src="<?=base_url();?>assets/js/ajax.js"></script>   
 </body>
 </html>

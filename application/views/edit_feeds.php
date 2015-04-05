@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Arkan Denys">
 
-    <title>Edit rss</title>
+    <title>Edit Feeds</title>
     
 <?php 
 foreach($css_files as $file): ?>
@@ -16,28 +16,26 @@ foreach($css_files as $file): ?>
 <?php foreach($js_files as $file): ?>
 	<script src="<?php echo $file; ?>"></script>
 <?php endforeach; ?>
-
+<link href="<?=base_url();?>assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="<?=base_url();?>assets/css/prettyPhoto.css" rel="stylesheet">
+    <link href="<?=base_url();?>assets/css/animate.css" rel="stylesheet">
+    <link href="<?=base_url();?>assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" >
+    <link href="<?=base_url();?>assets/css/main.css" rel="stylesheet">
+   
 </head>
 <body>
 
-<div class="container"  style="padding-top:50px;">
+<div class="container">
 	<div class="row">
 		<div class="col-lg-12">                
              
-	      
-<section id="title" class="emerald">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-             <h2>Manage feeds</h2>
-<p>Edit your feed sources</p>
-                </div>
-                
-            </div>
-        </div>
-    </section><!--/#title-->   
+	      <center><h4><a href="<?=base_url();?>">Click here to go to Home page</a></h4></center>
+
     
-		<?php echo $output; ?>
+		<div class="container">
+		    <?php echo $output; ?>
+		    
+		</div>
 
                 
                 </div>

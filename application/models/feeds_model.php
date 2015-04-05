@@ -18,10 +18,29 @@ class Feeds_model extends CI_Model{
 		            $this->db->where("favourite",1);
 		            $this->db->order_by('id','desc');
                     $query = $this->db->get();
-                    return $query->result_array();	       
+                    if($query){
+                            if(count($query) > 0){
+                                return $query->result_array();
+                            }else{
+                               return null; 
+                            }
+                        }	       
 	       }
 	       
-    
+            function get_latest_news(){
+                    $this->db->select('*');
+                    $this->db->from('rss_posts'); 
+		            $this->db->order_by('id','desc');
+                    $this->db->limit(100);
+                    $query = $this->db->get();
+                    if($query){
+                            if(count($query) > 0){
+                                return $query->result_array();
+                            }else{
+                               return null; 
+                            }
+                        }
+            }
     
          /*
          * All feeds sources
@@ -32,12 +51,48 @@ class Feeds_model extends CI_Model{
                     $this->db->from('feeds'); 
 		            $this->db->order_by('id','desc');
                     $query = $this->db->get();
-                    return $query->result_array();
-	       }
+                    
+                        if($query){
+                            if(count($query) > 0){
+                                return $query->result_array();
+                            }else{
+                               return null; 
+                            }
+                        }
                
-	       function insert_feed($user,$feed,$rss){
-		    $this->db->insert('feeds',$feed);
-		    $this->db->where('users_id',$user);
+	       }
+            
+    
+    
+    
+            function get_feed_link_by_id($id){
+                    $this->db->select('link');
+                    $this->db->from('feeds'); 
+		            $this->db->where("id",$id);
+                    $query = $this->db->get();
+                   return $query->first_row('array');
+                
+                
+                
+            }
+            
+        function get_feed_settings($id){
+                    $this->db->select('*');
+                    $this->db->from('feeds'); 
+		            $this->db->where("id",$id);
+                    $query = $this->db->get();
+                   return $query->first_row('array');
+        }
+    
+    
+    
+	       function insert_feed($feed,$rss){
+		    try{
+                $this->db->insert('feeds',$feed);
+            }
+             catch (Exception $e) {
+				exit();
+             }
 		    $feeds_id =  $this->db->insert_id();
 		   		    
 		 foreach($rss as $post => $data){
@@ -46,8 +101,13 @@ class Feeds_model extends CI_Model{
 			 unset($rss[$post]['author']);
 		 }	  
 			
-		   $this->db->insert_batch('rss_posts',$rss);
-		  
+		   
+		  try{
+               @$this->db->insert_batch('rss_posts',$rss);
+            }
+             catch (Exception $e) {
+				exit();
+             }
 		    
 	       }
 	       
@@ -67,16 +127,7 @@ class Feeds_model extends CI_Model{
 	
 	       
 	      
-	      function link_by_id($feed_id){
-		    $this->db->select('link');
-		    $this->db->from('feeds');
-		    $this->db->where('id',$feed_id);
-		    $this->db->limit(1);
-		    $query = $this->db->get();
-		    
-		    return $query->first_row('array');
-		    
-	      }
+	     
 	       
 	      function old_record($feed_id){
 		    

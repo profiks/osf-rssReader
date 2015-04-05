@@ -2,10 +2,8 @@ CREATE TABLE IF NOT EXISTS `feeds` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `link` varchar(255) DEFAULT NULL,
   `thumbnail` varchar(255) DEFAULT NULL,
-  `description` text,
-  `users_id` int(11) unsigned NOT NULL,
+  `title` varchar(255) DEFAULT NULL,
   `favourite` tinyint(1) DEFAULT NULL,
-  `views` int(11) NOT NULL,
   PRIMARY KEY (`id`),
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=0 ;
 

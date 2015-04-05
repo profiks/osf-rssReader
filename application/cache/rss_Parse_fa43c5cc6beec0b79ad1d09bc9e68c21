@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Health</title>  
+    <link>http://www.bbc.co.uk/news/health/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Health section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Fri, 03 Apr 2015 23:09:39 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Health</title>  
+      <link>http://www.bbc.co.uk/news/health/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/health/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Public 'back tax rises to fund NHS'</title>  
+      <description>A majority of people in Britain support tax rises as a way of funding the NHS ahead of cuts to other public services, a poll suggests.</description>  
+      <link>http://www.bbc.co.uk/news/health-32151444#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32151444</guid>  
+      <pubDate>Sat, 04 Apr 2015 00:22:45 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82092000/jpg/_82092734_stetho.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82092000/jpg/_82092735_stetho.jpg"/> 
+    </item>  
+    <item> 
+      <title>Child heart surgery deaths 'halved'</title>  
+      <description>Children's heart surgery in the UK, often the source of controversy, has improved significantly, a report has concluded.</description>  
+      <link>http://www.bbc.co.uk/news/health-32162803#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32162803</guid>  
+      <pubDate>Thu, 02 Apr 2015 23:04:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82083000/jpg/_82083941_c0196258-nurse_with_child_heart_surgery_patient-spl.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82083000/jpg/_82083942_c0196258-nurse_with_child_heart_surgery_patient-spl.jpg"/> 
+    </item>  
+    <item> 
+      <title>Personal cancer vaccines 'exciting'</title>  
+      <description>Tailor-made cancer vaccines that target unique genetic errors in a patient's tumour have been developed in the US.</description>  
+      <link>http://www.bbc.co.uk/news/health-32162799#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32162799</guid>  
+      <pubDate>Thu, 02 Apr 2015 23:47:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82081000/jpg/_82081980_89160.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82082000/jpg/_82082031_89160.jpg"/> 
+    </item>  
+    <item> 
+      <title>Children’s hospital builds sleep app</title>  
+      <description>A free app to help improve children’s sleep has been launched by doctors at the Evelina Children’s Hospital in London.</description>  
+      <link>http://www.bbc.co.uk/news/health-32150528#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32150528</guid>  
+      <pubDate>Wed, 01 Apr 2015 23:07:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82065000/png/_82065498_phone.png"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82065000/png/_82065499_phone.png"/> 
+    </item>  
+    <item> 
+      <title>Unsafe food 'growing global threat'</title>  
+      <description>Eating food contaminated with bugs leads to more than 580 million cases of illness a year, a World Health Organization report warns.</description>  
+      <link>http://www.bbc.co.uk/news/health-32130767#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32130767</guid>  
+      <pubDate>Thu, 02 Apr 2015 14:54:30 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82033000/jpg/_82033440_shellfishthinkstockphotos-470981381.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82033000/jpg/_82033441_shellfishthinkstockphotos-470981381.jpg"/> 
+    </item>  
+    <item> 
+      <title>Blood test for Down's syndrome hailed</title>  
+      <description>Testing a pregnant woman's blood for disorders in her unborn child promises 'dramatic' advances in medicine, say researchers.</description>  
+      <link>http://www.bbc.co.uk/news/health-32153941#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32153941</guid>  
+      <pubDate>Wed, 01 Apr 2015 22:08:13 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82070000/jpg/_82070995_downp6800135-foetus_aged_12_weeks-spl.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82070000/jpg/_82070996_downp6800135-foetus_aged_12_weeks-spl.jpg"/> 
+    </item>  
+    <item> 
+      <title>Drug giant 'blocks' eye treatment</title>  
+      <description>A drugs firm has been accused of trying to block access to what some doctors believe is a cheap, safe and effective drug to treat a common eye condition.</description>  
+      <link>http://www.bbc.co.uk/news/health-32151801#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32151801</guid>  
+      <pubDate>Wed, 01 Apr 2015 23:02:37 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82064000/jpg/_82064539_c0198508-open_eye_of_young_.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82064000/jpg/_82064540_c0198508-open_eye_of_young_.jpg"/> 
+    </item>  
+    <item> 
+      <title>Hospital returns to NHS management</title>  
+      <description>The first NHS hospital to be run by the private sector returns to NHS management.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-cambridgeshire-32147907#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-cambridgeshire-32147907</guid>  
+      <pubDate>Wed, 01 Apr 2015 18:41:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82063000/jpg/_82063043_hinchingbrooke_mainentrance_aug13.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82063000/jpg/_82063044_hinchingbrooke_mainentrance_aug13.jpg"/> 
+    </item>  
+    <item> 
+      <title>Ambulance progress 'not fast enough'</title>  
+      <description>The ambulance service in Wales is not improving quickly enough, a cross-party committee of AMs warns.</description>  
+      <link>http://www.bbc.co.uk/news/uk-wales-32147576#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-wales-32147576</guid>  
+      <pubDate>Thu, 02 Apr 2015 07:58:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82060000/jpg/_82060998_82057993.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82060000/jpg/_82060999_82057993.jpg"/> 
+    </item>  
+    <item> 
+      <title>Care system gets 'biggest shake-up'</title>  
+      <description>Major changes to the care system in England, dubbed the biggest shake-up for 60 years, are being introduced, while Scotland merges NHS and care budgets.</description>  
+      <link>http://www.bbc.co.uk/news/health-32136209#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32136209</guid>  
+      <pubDate>Tue, 31 Mar 2015 23:04:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82038000/jpg/_82038178_xf8bilb9.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82038000/jpg/_82038179_xf8bilb9.jpg"/> 
+    </item>  
+    <item> 
+      <title>Paracetamol ‘no good for back pain'</title>  
+      <description>Paracetamol is ineffective at treating back pain and osteoarthritis despite being a recommended treatment, a group of Australian researchers warns.</description>  
+      <link>http://www.bbc.co.uk/news/health-32132377#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32132377</guid>  
+      <pubDate>Tue, 31 Mar 2015 23:06:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82035000/jpg/_82035706_thinkstockphotos-517221919.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82035000/jpg/_82035807_thinkstockphotos-517221919.jpg"/> 
+    </item>  
+    <item> 
+      <title>MS drug 'may already be out there'</title>  
+      <description>Depression and heart disease drugs are to be tested in a new trial to find treatments for Multiple Sclerosis (MS).</description>  
+      <link>http://www.bbc.co.uk/news/health-32136208#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32136208</guid>  
+      <pubDate>Tue, 31 Mar 2015 17:00:41 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82038000/jpg/_82038146_c0167299-fluoxetine_capsule-spl.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82038000/jpg/_82038147_c0167299-fluoxetine_capsule-spl.jpg"/> 
+    </item>  
+    <item> 
+      <title>More veterans seek mental health aid</title>  
+      <description>A mental health charity which treats military veterans says referrals have increased by 26% in the last year.</description>  
+      <link>http://www.bbc.co.uk/news/uk-32126052#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-32126052</guid>  
+      <pubDate>Mon, 30 Mar 2015 23:45:59 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82020000/jpg/_82020328_74776368.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82020000/jpg/_82020329_74776368.jpg"/> 
+    </item>  
+    <item> 
+      <title>Medieval eye remedy 'kills MRSA'</title>  
+      <description>A 1,000-year-old treatment for eye infections could hold the key to killing antibiotic-resistant superbugs, scientists say.</description>  
+      <link>http://www.bbc.co.uk/news/uk-england-nottinghamshire-32117815#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-england-nottinghamshire-32117815</guid>  
+      <pubDate>Mon, 30 Mar 2015 14:14:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82014000/jpg/_82014195_bald%26apos%3Bsleechbookfolio12b.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82014000/jpg/_82014196_bald%26apos%3Bsleechbookfolio12b.jpg"/> 
+    </item>  
+    <item> 
+      <title>DNA of 'an entire nation' assessed</title>  
+      <description>The genetic code of "an entire nation" has effectively been deduced, say researchers in Iceland.</description>  
+      <link>http://www.bbc.co.uk/news/health-32024158#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32024158</guid>  
+      <pubDate>Thu, 26 Mar 2015 01:54:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/81903000/jpg/_81903831_thinkstockphotos-515839343.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/81903000/jpg/_81903832_thinkstockphotos-515839343.jpg"/> 
+    </item>  
+    <item> 
+      <title>NHS should welcome 'citizen whistleblowers'</title>  
+      <description>Why the NHS should listen to people who see something amiss</description>  
+      <link>http://www.bbc.co.uk/news/health-30333071#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-30333071</guid>  
+      <pubDate>Fri, 05 Dec 2014 01:46:52 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/79521000/jpg/_79521859_hospwardx.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/79521000/jpg/_79521860_hospwardx.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Cancer made me want mashed potato'</title>  
+      <description>The strange effects of cancer on appetite</description>  
+      <link>http://www.bbc.co.uk/news/health-31641689#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-31641689</guid>  
+      <pubDate>Sun, 08 Mar 2015 01:31:05 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/81451000/jpg/_81451613_2014_07_04cancerbook_courgette_muffin_bread_19599_hereedit.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/81451000/jpg/_81451614_2014_07_04cancerbook_courgette_muffin_bread_19599_hereedit.jpg"/> 
+    </item>  
+    <item> 
+      <title>'Improve end-of-life care' - MPs</title>  
+      <description>Social care should be free to everyone at the end of life, says a report by MPs which also calls for better recording of what people want in their final days.</description>  
+      <link>http://www.bbc.co.uk/news/health-31871482#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-31871482</guid>  
+      <pubDate>Sun, 15 Mar 2015 10:13:53 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/81625000/jpg/_81625918_endoflife_care.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/81625000/jpg/_81625999_endoflife_care.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Welcome to the designer asylum</title>  
+      <description>Why one artist has built the asylum of his dreams, a space he calls "a safe place to go mad".</description>  
+      <link>http://www.bbc.co.uk/news/health-32035911#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32035911</guid>  
+      <pubDate>Fri, 03 Apr 2015 23:01:55 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/81865000/jpg/_81865892_81865883.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/81866000/jpg/_81866044_81865883.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Miliband: Cameron 'failed' the NHS</title>  
+      <description>Labour leader Ed Miliband says the National Health Service needs to be ''rescued'' from the Conservatives, while David Cameron insists there are more people being treated.</description>  
+      <link>http://www.bbc.co.uk/news/election-2015-32165446#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/election-2015-32165446</guid>  
+      <pubDate>Thu, 02 Apr 2015 20:37:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82099000/jpg/_82099905_82099757.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82099000/jpg/_82099906_82099757.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: 'We must plan for future of NHS'</title>  
+      <description>As the 2015 election campaign gathers pace, the BBC speaks to a manager in the National Health Service - Matthew Fitzpatrick from London.</description>  
+      <link>http://www.bbc.co.uk/news/election-2015-32154255#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/election-2015-32154255</guid>  
+      <pubDate>Wed, 01 Apr 2015 21:56:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82073000/jpg/_82073552_82073209.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82073000/jpg/_82073553_82073209.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Why are we having less sex?</title>  
+      <description>Sex as a recreational activity, is in decline, according to Sex By Numbers, a new book on sexual behaviour written by David Spiegelhalter.</description>  
+      <link>http://www.bbc.co.uk/news/science-environment-32172629#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/science-environment-32172629</guid>  
+      <pubDate>Fri, 03 Apr 2015 11:23:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82101000/jpg/_82101004_82100996.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82101000/jpg/_82101005_82100996.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Could existing drugs offer MS hope?</title>  
+      <description>Depression and heart-disease drugs are to be tested in a trial to find treatments for Multiple Sclerosis (MS) from existing medicines.</description>  
+      <link>http://www.bbc.co.uk/news/health-32137178#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32137178</guid>  
+      <pubDate>Tue, 31 Mar 2015 21:39:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82044000/jpg/_82044859_82044354.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82044000/jpg/_82044860_82044354.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Disability village 'under threat'</title>  
+      <description>The village of Botton in North Yorkshire has been home to people with learning disabilities for 60 years, but there are claims that the community could be under threat.</description>  
+      <link>http://www.bbc.co.uk/news/uk-32127040#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-32127040</guid>  
+      <pubDate>Tue, 31 Mar 2015 07:24:42 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82022000/jpg/_82022342_82022173.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82022000/jpg/_82022343_82022173.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Nursing code of conduct launched</title>  
+      <description>A new code of conduct has been launched by the body that oversees 670,000 nurses and midwives in the UK.</description>  
+      <link>http://www.bbc.co.uk/news/health-32127896#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32127896</guid>  
+      <pubDate>Tue, 31 Mar 2015 08:17:20 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82024000/jpg/_82024473_82022961.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82024000/jpg/_82024474_82022961.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Vaccine to protect from meningitis B</title>  
+      <description>An agreement has been reached to provide a meningitis B vaccine for all babies in the UK, the BBC's Sarah Campbell reports.</description>  
+      <link>http://www.bbc.co.uk/news/health-32104724#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32104724</guid>  
+      <pubDate>Sun, 29 Mar 2015 12:31:19 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/81986000/jpg/_81986629_syringe.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/81987000/jpg/_81987054_syringe.jpg"/> 
+    </item>  
+    <item> 
+      <title>Five ideas to transform the NHS</title>  
+      <description>Five ideas on how to transform the NHS</description>  
+      <link>http://www.bbc.co.uk/news/health-32072847#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32072847</guid>  
+      <pubDate>Fri, 03 Apr 2015 03:13:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82036000/jpg/_82036290_healthvisions_getty463019425.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82036000/jpg/_82036291_healthvisions_getty463019425.jpg"/> 
+    </item>  
+    <item> 
+      <title>Health highlights</title>  
+      <description>Nick Triggle reviews the big stories of the past few weeks</description>  
+      <link>http://www.bbc.co.uk/news/health-32151435#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32151435</guid>  
+      <pubDate>Thu, 02 Apr 2015 12:39:44 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82085000/jpg/_82085651_medicrun_promo320x180.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82085000/jpg/_82085652_medicrun_promo320x180.jpg"/> 
+    </item>  
+    <item> 
+      <title>Uganda circumcision truck fights HIV</title>  
+      <description>Uganda circumcision truck fights HIV</description>  
+      <link>http://www.bbc.co.uk/news/health-32121923#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32121923</guid>  
+      <pubDate>Tue, 31 Mar 2015 02:10:18 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82008000/jpg/_82008619_line_of_men_waiting.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82015000/jpg/_82015355_line_of_men_waiting.jpg"/> 
+    </item>  
+    <item> 
+      <title>The Bolivian women who knit parts for hearts</title>  
+      <description>The Bolivian women knitting a high-tech medical device</description>  
+      <link>http://www.bbc.co.uk/news/health-32076070#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32076070</guid>  
+      <pubDate>Sun, 29 Mar 2015 00:30:03 GMT</pubDate> 
+    </item>  
+    <item> 
+      <title>What drives people to murder-suicide?</title>  
+      <description>What drives people to murder-suicide?</description>  
+      <link>http://www.bbc.co.uk/news/health-32086196#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32086196</guid>  
+      <pubDate>Sat, 28 Mar 2015 00:13:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/81975000/jpg/_81975203_81942622.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/81975000/jpg/_81975204_81942622.jpg"/> 
+    </item>  
+    <item> 
+      <title>Chikungunya revives herbal remedies in Antigua</title>  
+      <description>Antigua sees revival of natural remedies</description>  
+      <link>http://www.bbc.co.uk/news/world-latin-america-32034349#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/world-latin-america-32034349</guid>  
+      <pubDate>Sun, 29 Mar 2015 00:35:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/81917000/jpg/_81917258_herbs.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/81917000/jpg/_81917259_herbs.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

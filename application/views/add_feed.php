@@ -10,18 +10,24 @@
         </div>
     </section><!--/#title-->
  
- 
- <div class="modal-dialog" style="padding-top:50px;">
-   
-  <div class="modal-content">
-      
-      <div class="modal-body">
+ <div class="container">
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        
+         <div class="chat-panel panel panel-default chat-boder chat-panel-head" style="margin-top:50px;">
+                        <div class="panel-heading">
+                        <span class="glyphicon glyphicon-globe"></span>
+                        Add new RSS source
+                        </div>
 
-
-
-<p><?php if (isset($message) && !empty($message))
-{  echo "<div class='col-md-12 alert alert-warning' role='alert'>{$message}</div>";}?> </p>
-
+                        <div class="panel-body">
+                           
+                                <div class="left clearfix">
+            <div class="chat-body">  
+				                            <? $flash_message = $this->session->flashdata('message');?>                 
+                                  <p><?php if (isset($message) && !empty($message) || isset($flash_message) && !empty($flash_message)) 
+    
+{  echo "<div class='col-md-12 alert alert-warning' role='alert'>{$message}{$flash_message}</div>";}?> </p>
 
 <?php echo form_open("user/add_feed/","class='form col-md-12 center-block'");?>
 	 
@@ -42,16 +48,30 @@
       </p>
 	 </div>
     <p><?php echo form_submit('submit', 'Insert',"class='btn btn-primary btn-md btn-block'");?></p>
-   <p><a href="<?=base_url();?>" class='btn btn-primary btn-md btn-block'> <span class=' glyphicon glyphicon-remove'></span> Cancel</a> </p> 
-<?php echo form_close();?>
+   <p><a href="<?=base_url();?>" class='btn btn-danger btn-md btn-block'> <span class=' glyphicon glyphicon-remove'></span> Cancel</a> </p> 
+<?php echo form_close();?>    
+               
+                                      </div>
+                                </div>
+				
+				
+                                
+                           
+                        </div>
+
+                        <div class="panel-footer">                           
+			  
+			   
+                        </div>
+
+                    </div>
+        
+    </div>
+    
+</div>  <!-- end row-->
+</div>
+
+
 
 
   
-      </div>
-      <div class="modal-footer">
-          <div class="col-md-12">
-          
-		  </div>	
-      </div>
-  </div>
-  </div>

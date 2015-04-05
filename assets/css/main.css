@@ -1087,3 +1087,23 @@ ul.faq li > div h3 {
   margin-top: 150px;
   margin-bottom: 150px;
 }
+
+
+
+#options-content{
+    display: none;
+}
+
+#okButton, .delete, #edit_feed{
+    background: #34495E;
+    color: #BDC3C7;
+}
+
+#okButton,#edit_feed:hover{
+    color: #fff;
+}
+
+.delete:hover{
+    background: #34495E;
+    color: #fff;
+}

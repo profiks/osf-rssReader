@@ -22,6 +22,7 @@ class User extends CI_controller {
 	{		
 		$data['title']="Welcome";		 
         $data['favourite']= $this->feeds_model->get_favourite_sources();
+        $data['latest'] = $this->feeds_model->get_latest_news();
 		$this->load->view('header',$data);
 		$this->load->view('nav');
 		$this->load->view('main_page',$data);
@@ -30,27 +31,47 @@ class User extends CI_controller {
 	
 	function add_feed(){			
 		
-		$this->form_validation->set_rules('url', "Url", 'required|xss_clean|min_length[10]|trim');
-		
+		$this->form_validation->set_rules('url', "Url", 'required|min_length[5]|max_length[120]|trim');
 		if ($this->form_validation->run() == TRUE){
 			
-			$feed['link'] =  $_POST['url'];
+            $feed['link'] =  $_POST['url'];
 			$feed['thumbnail'] = NULL;
-			$feed['favourite'] = 0;
-			
-			
+			$feed['favourite'] = 0;	
 			$url = $feed['link'];	
-			
-			try {
-		$rss = @$this->rssparser->set_feed_url($url)->set_cache_life(30)->getFeed(50);
+            
+            $xml = new XMLReader();            
+            @$xml->open($url);
+            @$xml->setParserProperty(XMLReader::VALIDATE, true);
+
+        if($xml->isValid()){            
+                    try {
+                        $rss = @$this->rssparser->set_feed_url($url)->set_cache_life(30)->getFeed(50);
+                    } catch (Exception $e) {
+                        //some error occured
+                        $this->session->set_flashdata('message', "Invalid URL");
+                        redirect('user/add_feed');
+                    }
+		
+		
+            try {
+                @$this->feeds_model->insert_feed($feed,$rss);
 				} catch (Exception $e) {
 					
-				//some error occured;
+                //some error occured
+				$this->session->set_flashdata('message', "Invalid URL");
+				redirect('user/add_feed');
 				}
-		
-		$this->feeds_model->insert_feed($feed,$rss);
+            
 		redirect('user');
+        } else{
+            $this->session->set_flashdata('message', "Invalid URL");
+				redirect('user/add_feed');
+        
+        }
+			
+			
 		}else{
+            
 			$data['message'] = validation_errors();
 			$data['title'] = 'Add feed';
 			$this->load->view('header',$data);
@@ -68,16 +89,10 @@ class User extends CI_controller {
 		try{
 			$crud = new grocery_CRUD();
 
-			//$crud->set_theme('twitter-bootstrap');
-			
-			//$crud->where('users_id',$id);	
+			$crud->set_theme('twitter-bootstrap');
 			$crud->set_table('feeds');
 			$crud->columns('link','title','favourite');
 			$crud->fields('link','title','favourite');
-			//$crud->change_field_type('users_id', 'hidden', $id);			
-			
-			
-
 			$output = $crud->render();
 			$this->_example_output($output);
 
@@ -105,13 +120,11 @@ class User extends CI_controller {
 		if(!isset($feed_id)) {
 			show_404();
 		}
-		
-		
-	
-	$data['title'] = "Single";	
-	$data['rss'] = $this->feeds_model->rss_posts($feed_id);
-	
-		
+
+        $data['page']= (int)$feed_id;
+        $data['rss'] = $this->feeds_model->rss_posts($feed_id);
+        $data['parent_link'] = $this->feeds_model->get_feed_link_by_id($feed_id);
+		$data['title'] = "Single";	
 			
 			
 	$this->load->library('pagination'); 
@@ -120,7 +133,7 @@ class User extends CI_controller {
 	 $config['total_rows'] = count($data['rss']);	
 	 $config["per_page"] = 10; 
 	 $config["uri_segment"] = 4; 
-	 // twitter bootstrap markup 
+	/* // twitter bootstrap markup 
 	 $config['full_tag_open'] = '<ul class="pagination pagination-sm">';
 	 $config['full_tag_close'] = '</ul>';
 	 $config['num_tag_open'] = '<li>';
@@ -138,7 +151,7 @@ class User extends CI_controller {
 	 $config['first_tag_open'] = '<li>'; 
 	 $config['first_tag_close'] = '</li>'; 
 	 $config['last_tag_open'] = '<li>'; 
-	 $config['last_tag_close'] = '</li>';
+	 $config['last_tag_close'] = '</li>';*/
 	 $this->pagination->initialize($config);
 	 // pass the parameters for per_page, page number, order by, sort, etc here
 	 // generate links 
@@ -164,16 +177,16 @@ class User extends CI_controller {
         $this->load->view('nav');
         $this->load->view('all_feeds',$data);
         $this->load->view('footer');
-		
+        
 	}
 	
-	
+    	
 	function refresh_posts($feed_id=null){
 		
 		if (!isset($feed_id)) {
 			show_404();
 		}		
-	$url = $this->feeds_model->link_by_id($feed_id);	
+	$url = $this->feeds_model->get_feed_link_by_id($feed_id);	
 	$url = (string)$url['link'];	
 		
 	$rss = $this->rssparser->set_feed_url($url)->set_cache_life(30)->getFeed(1);
@@ -195,52 +208,233 @@ class User extends CI_controller {
 	
 	}
 	
-	
-	/*function _get_csrf_nonce()
-	{
-		$this->load->helper('string');
-		$key   = random_string('alnum', 8);
-		$value = random_string('alnum', 20);
-		$this->session->set_flashdata('csrfkey', $key);
-		$this->session->set_flashdata('csrfvalue', $value);
-
-		return array($key => $value);
-	}*/
-
-	/*function _valid_csrf_nonce()
-	{
-		if ($this->input->post($this->session->flashdata('csrfkey')) !== FALSE &&
-			$this->input->post($this->session->flashdata('csrfkey')) == $this->session->flashdata('csrfvalue'))
-		{
-			return TRUE;
-		}
-		else
-		{
-			return FALSE;
-		}
-	}*/
-
-	function _render_page($view, $data=null, $render=false)
-	{
-
-		$this->viewdata = (empty($data)) ? $this->data: $data;
-			
-		$this->load->view('templates/header',$data);
-		$this->load->view('templates/nav',$data);
-		$view_html = $this->load->view($view, $this->viewdata, $render);
-		$this->load->view('templates/footer'); 
-
-		if (!$render) return $view_html;
-	}
-	
 	public function _example_output($output = null)	
 	{
 		
-		$this->load->view('edit_feeds',$output);
+$data['title'] = "Edit feeds";
+       
+
+        $this->load->view('edit_feeds',$output);
+    $this->load->view('edit-footer');
 		
 	}
-		
 	
+    
+    /* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| kohana |||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+    
+    public function manage_feeds(){
+        
+            $data['title'] = "Edit feeds";
+            $data['feeds'] = $this->feeds_model->get_all_feeds();        
+            $this->load->view('header',$data);
+            $this->load->view('nav');
+            $this->load->view('manage_feeds',$data);
+            $this->load->view('manage-footer');
+        
+    }
+    
+    public function my_feeds(){
+        $feeds= $this->feeds_model->get_all_feeds();     
+         print json_encode($feeds);	
+    }
+    
+    
+    public function get_one_feed(){
+    if ($this->input->is_ajax_request()) {
+        $id = $this->input->post('id'); 
+        
+        
+            $feeds= $this->feeds_model->get_feed_settings($id);     
+         print json_encode($feeds);	
+           
+    }else {
+            exit('No direct script access allowed');
+        
+    }
+    }
+
+    
+    public function action_allClients(){
+	$clients = Model::factory('clients');	
+	
+	$all_clients = $clients->get_all_clients();
+	
+	print json_encode($all_clients);
+	
+	}
+	
+	
+	private function _valid($post){
+		
+		$clients = Model::factory('clients');
+		$object = Validation::factory($post);	
+		$object->rules(		
+		   'number',array(
+			array('not_empty'),
+		        array('max_length', array(':value', 10)),
+			array('numeric')			
+			//array(array($clients,'unique_number'))
+			
+		   ));
+		
+		 $object->rules(  
+		   'name',array(
+			array('not_empty'),
+		        array('max_length', array(':value', 100)),
+			array('regex', array(':value', '/^[a-z_.]++$/iD')) 
+		   ));
+		  $object->rules( 
+		   'last_name',array(
+			array('not_empty'),
+		        array('max_length', array(':value', 100)),
+			array('regex', array(':value', '/^[a-z_.]++$/iD')) 	
+		   ));
+		  $object->rules(
+		   'email', array(
+		      array('not_empty'),
+		      array('max_length', array(':value', 100)),
+		      array('email')
+		   ));
+		   
+		   $object->rules(
+		   'adress',array(
+			array('not_empty'),
+		        array('max_length', array(':value', 100))    
+		   ));
+		   $object->rules(
+		   'city',array(
+			array('not_empty'),
+		        array('max_length', array(':value', 100)),
+			array('regex', array(':value', '/^[a-z_.]++$/iD')) 
+		   ));
+		   $object->rules(
+		   'country',array(
+			array('not_empty'),
+		        array('max_length', array(':value', 100)),
+			array('regex', array(':value', '/^[a-z_.]++$/iD'))
+		   ));
+		   
+		return $object;
+		
+	}
+	
+	
+	public function action_add(){
+		$clients = Model::factory('clients');
+		if ($this->request->is_ajax()){
+			$post = $this->request->post();
+				foreach ($post as $value => $key){
+				$post[$value] = trim(htmlentities($key)); 
+				}
+			$object = $this->_valid($post);
+			
+			
+			if ($object->check())
+			{
+				try {
+				if (!$clients->add_client($post)) {
+				    throw new Exception("Somethink was wrong!!");
+					}
+				}
+				catch (Exception $e) {
+				    echo $e->getMessage();}	
+					
+			
+			}else
+			{			
+			return false;
+			}		
+		}else {
+			echo "Direct access not alowed";
+		}//endif;
+	}
+	
+	
+	
+	
+	public function action_get_one_client(){
+		if ($this->request->is_ajax()){
+		
+		$id = $this->request->post('id');
+		if (!isset($id) || !is_numeric($id)){
+			 exit();
+		}
+		$clients = Model::factory('clients');
+		
+		try {
+			if (!$single = $clients->one_client($id)) {
+			    throw new Exception("Somethink was wrong!!");
+				}
+			}
+			catch (Exception $e) {
+			    echo $e->getMessage();}
+		
+		
+		print json_encode($single);
+		}
+		else{echo "Direct access not alowed";}
+		
+	}
+	
+	public function action_edit(){
+				
+		if ($this->request->is_ajax()){
+		$client = Model::factory('clients');	
+		$id = $this->request->post('id');	
+			$post = $this->request->post();
+		foreach ($post as $value => $key){
+			$post['id']= $id;
+			$post[$value] = trim(htmlentities($key)); 
+			}
+		
+		$object = $this->_valid($post);
+		
+		if ($object->check())
+			{
+				
+			try {
+			if (! $client->edit_client($post)) {
+			    throw new Exception("Somethink was wrong!!");
+				}
+			}
+			catch (Exception $e) {
+			    echo $e->getMessage();}
+			}
+			else {
+		
+		return false;
+		  
+		}
+		
+		
+			
+			
+		}//endif;
+		
+		
+		
+	}
+
+	public function action_del(){
+		
+		if ($this->request->is_ajax()){
+		$id = $this->request->post('id');
+		if (!isset($id) || !is_numeric($id)){
+			 exit();
+		}elseif (isset($id) && !empty($id)) {
+		
+		$clients = Model::factory('clients');
+		$clients->del_client($id);
+		
+		}
+		}else {
+			echo"Direct acces not alowed";
+		}
+	}
+    
+    /* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| kohana |||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+    
+    
 	
 }
 

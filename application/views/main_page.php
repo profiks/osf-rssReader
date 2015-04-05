@@ -3,6 +3,14 @@
             <div class="row">
                 <div class="col-sm-12">
                <div class="clearfix"></div>
+                   <noscript>
+<div id="indicator" style="display:block;text-align: center;" class="loading_img">
+    <img src="<?=base_url(); ?>/assets/images/ajax-loader.gif"/>
+    <h1>This application require javascripts enabled. Please turn on javascripts in your browser.</h1>
+</div>				
+<!-- end loader image-->
+</noscript>
+                   
                     <h2 class="section-heading">RSS News Feeds</h2>
                     <p class="lead">Really Simple Syndication (RSS) is an XML-based format for news
 		    distribution that includes headlines, summaries and links back to a publisher website
@@ -68,21 +76,14 @@
 
                         <div class="panel-footer">                           
 			  
-			   <p><span class="glyphicon glyphicon-plus-sign"></span> <?php echo anchor('user/add_feed/',"Add Feed"); ?></p>
 			   
-			<p><span class="glyphicon glyphicon-cog"></span>    <?php
-			   $atts = array(
-              'width'      => '1200',
-              'height'     => '800',
-              'scrollbars' => 'yes',
-              'status'     => 'yes',
-              'resizable'  => 'yes',
-              'screenx'    => '0',
-              'screeny'    => '0'
-            );
+			   
+			
+                       <p><span class="glyphicon glyphicon-cog"></span>    <?php
 
-echo anchor_popup('user/edit_feeds/', 'Manage feeds', $atts);
+echo anchor('user/manage_feeds/', 'Manage feeds');
 			   ?></p>
+                       
                         </div>
 
                     </div>
@@ -90,6 +91,51 @@ echo anchor_popup('user/edit_feeds/', 'Manage feeds', $atts);
                    
                 </div>
                 
+                
+                <!-- latest news-->
+                
+                <div class="col-lg-6 col-sm-6">
+		    
+                    
+			
+			 <div class="chat-panel panel panel-default chat-boder chat-panel-head" id="customScrollbar">
+                        <div class="panel-heading">
+                        <span class="glyphicon glyphicon-list-alt"></span>
+                        Latest news
+                        </div>
+
+                        <div class="panel-body">
+                           
+                                <div class="left clearfix">
+            <div class="chat-body mCustomScrollbar" id="scrolling" data-mcs-theme="dark" style="height:260px;">  
+				 
+                                                                      
+                                       <?php
+				foreach ($latest as $item){ ?>
+				<p> 
+                     <h4><a href='<?=$item['link'];?>' target='_blank'><?=$item['title'];?></a></h4>
+            <p><?=$item['description'];?></p>
+                                   
+                               <? } ?>    
+               
+                                      </div>
+                                </div>
+				
+				
+                                
+                           
+                        </div>
+
+                        <div class="panel-footer">                           
+			  
+			   
+                        </div>
+
+                    </div>
+<!--/#title-->
+                   
+                </div>
+                <!-- end latest news-->
             </div>
 
         </div>
