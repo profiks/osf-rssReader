@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">  
+  <channel> 
+    <title>BBC News - Technology</title>  
+    <link>http://www.bbc.co.uk/news/technology/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+    <description>The latest stories from the Technology section of the BBC News web site.</description>  
+    <language>en-gb</language>  
+    <lastBuildDate>Fri, 03 Apr 2015 16:22:45 GMT</lastBuildDate>  
+    <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
+    <image> 
+      <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
+      <title>BBC News - Technology</title>  
+      <link>http://www.bbc.co.uk/news/technology/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <width>120</width>  
+      <height>60</height> 
+    </image>  
+    <ttl>15</ttl>  
+    <atom:link href="http://feeds.bbci.co.uk/news/technology/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>OnLive gaming service to switch off</title>  
+      <description>Video game streaming pioneer OnLive is to close after five years following the sale of several of its patents to Sony.</description>  
+      <link>http://www.bbc.co.uk/news/technology-32173664#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-32173664</guid>  
+      <pubDate>Fri, 03 Apr 2015 13:03:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82107000/jpg/_82107128_82106795.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82107000/jpg/_82107129_82106795.jpg"/> 
+    </item>  
+    <item> 
+      <title>YouTube hack 'threatened' Bieber clips</title>  
+      <description>A Russian coder reveals how he discovered a way to delete any clip uploaded to YouTube within 30 seconds.</description>  
+      <link>http://www.bbc.co.uk/news/technology-32173657#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-32173657</guid>  
+      <pubDate>Fri, 03 Apr 2015 11:12:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82104000/jpg/_82104054_82103941.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82104000/jpg/_82104055_82103941.jpg"/> 
+    </item>  
+    <item> 
+      <title>Android apps to run on Windows, Macs</title>  
+      <description>Google has released a software tool that lets Android apps run on any machine that can run its Chrome browser.</description>  
+      <link>http://www.bbc.co.uk/news/technology-32160263#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-32160263</guid>  
+      <pubDate>Thu, 02 Apr 2015 11:27:01 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82082000/jpg/_82082076_147367666.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82082000/jpg/_82082077_147367666.jpg"/> 
+    </item>  
+    <item> 
+      <title>Airbnb adds Cuba to destination list</title>  
+      <description>Airbnb begins listing rooms to rent in Cuba, but only allows US-based members to make bookings.</description>  
+      <link>http://www.bbc.co.uk/news/technology-32161086#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-32161086</guid>  
+      <pubDate>Thu, 02 Apr 2015 11:12:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82082000/jpg/_82082188_82081844.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82082000/jpg/_82082189_82081844.jpg"/> 
+    </item>  
+    <item> 
+      <title>Google drops Chinese net regulator</title>  
+      <description>A Chinese internet regulator has hit out at Google for no longer accepting its security certificates.</description>  
+      <link>http://www.bbc.co.uk/news/technology-32163248#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-32163248</guid>  
+      <pubDate>Thu, 02 Apr 2015 13:17:06 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82087000/jpg/_82087098_98166691.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82087000/jpg/_82087099_98166691.jpg"/> 
+    </item>  
+    <item> 
+      <title>Social media teacher abuse 'rising'</title>  
+      <description>The NASUWT teachers' union says an increasing number of teachers are facing abuse on social media, not only from pupils but also parents.</description>  
+      <link>http://www.bbc.co.uk/news/education-32145849#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/education-32145849</guid>  
+      <pubDate>Wed, 01 Apr 2015 23:09:26 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82084000/jpg/_82084799_82084792.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82084000/jpg/_82084800_82084792.jpg"/> 
+    </item>  
+    <item> 
+      <title>Google reveals computer-on-a-stick</title>  
+      <description>Google announces that a range of computer-on-a-sticks and laptops costing as low as $149 (£101) are joining its range of Chrome OS devices.</description>  
+      <link>http://www.bbc.co.uk/news/technology-32143923#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-32143923</guid>  
+      <pubDate>Wed, 01 Apr 2015 12:31:29 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82052000/jpg/_82052962_82052841.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82052000/jpg/_82052963_82052841.jpg"/> 
+    </item>  
+    <item> 
+      <title>Tech sites lead on April Fools gags</title>  
+      <description>The Force - the mysterious energy field used by the Jedi in Star Wars - has been 'discovered' by researchers at the Cern laboratory in an April Fools prank.</description>  
+      <link>http://www.bbc.co.uk/news/technology-32145885#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-32145885</guid>  
+      <pubDate>Wed, 01 Apr 2015 11:39:24 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82055000/jpg/_82055120_38a4fb0d-f1cd-44a8-808e-8090819ccb53.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82055000/jpg/_82055121_38a4fb0d-f1cd-44a8-808e-8090819ccb53.jpg"/> 
+    </item>  
+    <item> 
+      <title>China cracks down on explicit anime</title>  
+      <description>China says it will create a "blacklist" of banned Japanese anime cartoons, and plans to punish firms that hosted violent and sexual clips online.</description>  
+      <link>http://www.bbc.co.uk/news/technology-32149754#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-32149754</guid>  
+      <pubDate>Wed, 01 Apr 2015 16:16:39 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82065000/jpg/_82065827_82064508.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82065000/jpg/_82065828_82064508.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Big leap in 4K video streaming tech</title>  
+      <description>A new method of compression could see ultra-HD video streamed to TVs and other devices using around 50% of the bandwidth currently needed.</description>  
+      <link>http://www.bbc.co.uk/news/technology-32140732#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-32140732</guid>  
+      <pubDate>Tue, 31 Mar 2015 23:22:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82045000/jpg/_82045704_486658003.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82045000/jpg/_82045705_486658003.jpg"/> 
+    </item>  
+    <item> 
+      <title>Amazon launches home ordering kit</title>  
+      <description>In an attempt to attract more household shoppers, Amazon unveils a button for replenish items such as washing powder and razors.</description>  
+      <link>http://www.bbc.co.uk/news/technology-32139432#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-32139432</guid>  
+      <pubDate>Tue, 31 Mar 2015 20:38:46 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82046000/jpg/_82046917_82046551.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82046000/jpg/_82046918_82046551.jpg"/> 
+    </item>  
+    <item> 
+      <title>Evidence links China to GitHub attack</title>  
+      <description>Security researchers say "innocent" internet users are unwittingly carrying out the attack, most likely hijacked by the Chinese government.</description>  
+      <link>http://www.bbc.co.uk/news/technology-32138088#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-32138088</guid>  
+      <pubDate>Tue, 31 Mar 2015 19:03:32 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82045000/jpg/_82045526_82044412.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82045000/jpg/_82045527_82044412.jpg"/> 
+    </item>  
+    <item> 
+      <title>Zelda delay: Has the Wii U had it?</title>  
+      <description>The release schedule for Nintendo's Wii U is looking "pretty barren" after the launch of Legend of Zelda was delayed, according to industry analysts.</description>  
+      <link>http://www.bbc.co.uk/newsbeat/32118692#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/newsbeat/32118692</guid>  
+      <pubDate>Mon, 30 Mar 2015 16:33:25 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82014000/jpg/_82014166_zelda.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82014000/jpg/_82014167_zelda.jpg"/> 
+    </item>  
+    <item> 
+      <title>Is politics on Twitter a man's world?</title>  
+      <description>Use of political hashtags in the UK seems to be dominated by men</description>  
+      <link>http://www.bbc.co.uk/news/blogs-trending-32137886#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/blogs-trending-32137886</guid>  
+      <pubDate>Wed, 01 Apr 2015 00:43:11 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82059000/jpg/_82059418_thinkstockphotos-468419461.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82059000/jpg/_82059419_thinkstockphotos-468419461.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Tech to help navigate Tokyo transport</title>  
+      <description>How beacon technology can help you navigate Tokyo’s complicated public transport system.</description>  
+      <link>http://www.bbc.co.uk/news/technology-32031829#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-32031829</guid>  
+      <pubDate>Fri, 27 Mar 2015 14:39:27 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/81950000/jpg/_81950410_shibuya2_1024.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/81950000/jpg/_81950411_shibuya2_1024.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Ghana’s burgeoning tech start-ups</title>  
+      <description>Inside the Ghanaian school for tech start-ups with big ambitions.</description>  
+      <link>http://www.bbc.co.uk/news/technology-31921850#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-31921850</guid>  
+      <pubDate>Fri, 27 Mar 2015 00:29:00 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/81700000/jpg/_81700324_comic1024.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/81700000/jpg/_81700606_comic1024.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Can technology improve traffic lights?</title>  
+      <description>Fiona Trott reports on new technology giving drivers more information on - and even power to control - traffic lights.</description>  
+      <link>http://www.bbc.co.uk/news/technology-32187925#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-32187925</guid>  
+      <pubDate>Sun, 05 Apr 2015 07:56:07 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82130000/jpg/_82130634_82130626.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82130000/jpg/_82130635_82130626.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Buyers’ guide: LG and Moto watches</title>  
+      <description>Kate Russell reviews some of the latest smartwatches.</description>  
+      <link>http://www.bbc.co.uk/news/technology-32129171#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-32129171</guid>  
+      <pubDate>Thu, 02 Apr 2015 15:45:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82090000/jpg/_82090213_watch1024.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82090000/jpg/_82090214_watch1024.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: The crime fighting 'Twitter chief'</title>  
+      <description>The Kenyan village chief who is turning to social media to help fight crime.</description>  
+      <link>http://www.bbc.co.uk/news/technology-32146228#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-32146228</guid>  
+      <pubDate>Thu, 02 Apr 2015 15:33:51 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82056000/jpg/_82056716_kariuki1024.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82056000/jpg/_82056717_kariuki1024.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Amazon's 'Dash' buttons explained</title>  
+      <description>Amazon has unveiled a button that can be placed around the home - and will replenish items when pressed.</description>  
+      <link>http://www.bbc.co.uk/news/technology-32153581#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-32153581</guid>  
+      <pubDate>Wed, 01 Apr 2015 15:25:47 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82065000/jpg/_82065400_82065391.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82065000/jpg/_82065421_82065391.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Snowden's smashed laptop on show</title>  
+      <description>The laptop used to store top-secret documents leaked by National Security Agency (NSA) whistleblower Edward Snowden has gone on display at the Victoria and Albert Museum in London.</description>  
+      <link>http://www.bbc.co.uk/news/uk-32154254#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-32154254</guid>  
+      <pubDate>Wed, 01 Apr 2015 21:04:12 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82073000/jpg/_82073169_82070763.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82073000/jpg/_82073170_82070763.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: App helping locals improve slum life</title>  
+      <description>How an app and mapping technology is making life better for residents in a Nairobi slum</description>  
+      <link>http://www.bbc.co.uk/news/technology-32084254#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-32084254</guid>  
+      <pubDate>Tue, 31 Mar 2015 23:31:38 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/81958000/jpg/_81958667_mathare_1024.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/81958000/jpg/_81958720_mathare_1024.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: The app that uploads to Congress</title>  
+      <description>StoryCorps has launched a smartphone app that directly uploads recordings to the US Library of Congress</description>  
+      <link>http://www.bbc.co.uk/news/technology-31808165#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-31808165</guid>  
+      <pubDate>Tue, 31 Mar 2015 23:30:33 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82040000/jpg/_82040765_de27.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82040000/jpg/_82040766_de27.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Farmers test out 'flying sheepdog'</title>  
+      <description>Paul Brennan talks to the BBC about sending a drone up to herd his sheep.</description>  
+      <link>http://www.bbc.co.uk/news/technology-32121702#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-32121702</guid>  
+      <pubDate>Mon, 30 Mar 2015 14:33:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82011000/jpg/_82011304_82011296.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82011000/jpg/_82011305_82011296.jpg"/> 
+    </item>  
+    <item> 
+      <title>Death of the hidden Easter egg?</title>  
+      <description>The end of the hidden Easter Egg?</description>  
+      <link>http://www.bbc.co.uk/news/business-32079749#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-32079749</guid>  
+      <pubDate>Thu, 02 Apr 2015 23:00:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82092000/jpg/_82092533_eggs.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82092000/jpg/_82092534_eggs.jpg"/> 
+    </item>  
+    <item> 
+      <title>Fiancee and cat tracked by home cam</title>  
+      <description>The girlfriend and cat watched by home cam</description>  
+      <link>http://www.bbc.co.uk/news/technology-32064454#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-32064454</guid>  
+      <pubDate>Wed, 01 Apr 2015 23:09:30 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82052000/jpg/_82052811_82050126.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82052000/jpg/_82052812_82050126.jpg"/> 
+    </item>  
+    <item> 
+      <title>British tech at the top of its game</title>  
+      <description>Changing perceptions of the UK's video game makers</description>  
+      <link>http://www.bbc.co.uk/news/technology-32145285#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-32145285</guid>  
+      <pubDate>Thu, 02 Apr 2015 13:03:36 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82087000/jpg/_82087686_fullsizerender.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82087000/jpg/_82087687_fullsizerender.jpg"/> 
+    </item>  
+    <item> 
+      <title>Virtual reality take on refugee life</title>  
+      <description>Virtual reality makes a new kind of journalism possible</description>  
+      <link>http://www.bbc.co.uk/news/technology-32052296#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-32052296</guid>  
+      <pubDate>Tue, 31 Mar 2015 23:24:43 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82053000/jpg/_82053711_82053591.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82053000/jpg/_82053712_82053591.jpg"/> 
+    </item>  
+    <item> 
+      <title>Will it be a tech election?</title>  
+      <description>Calls for the internet to be one of the key issues in the forthcoming UK election</description>  
+      <link>http://www.bbc.co.uk/news/technology-32132861#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/technology-32132861</guid>  
+      <pubDate>Tue, 31 Mar 2015 11:30:15 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82031000/jpg/_82031599_martha.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82031000/jpg/_82031600_martha.jpg"/> 
+    </item>  
+    <item> 
+      <title>Is fibre key to connecting Africa?</title>  
+      <description>Is fibre key to getting all of Africa online?</description>  
+      <link>http://www.bbc.co.uk/news/business-32079649#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/business-32079649</guid>  
+      <pubDate>Mon, 30 Mar 2015 23:17:08 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/81962000/jpg/_81962390_fibres.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/81962000/jpg/_81962391_fibres.jpg"/> 
+    </item> 
+  </channel> 
+</rss>

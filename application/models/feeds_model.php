@@ -110,12 +110,14 @@ class Feeds_model extends CI_Model{
              }
 		    
 	       }
-	       
-	      function rss_posts($feed_id){
+
+    
+    
+	      function rss_posts($feed_id,$limit,$offset){
 		    $this->db->select('*');
 		    $this->db->from('rss_posts');
 		    $this->db->where('feeds_id',$feed_id);
-		    $this->db->limit(50);
+		    $this->db->limit($limit,$offset);
 		    $query = $this->db->get();
 		    
 		    return  $query->result_array();

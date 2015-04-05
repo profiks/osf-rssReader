@@ -43,5 +43,5 @@
  
            <div class="container">
             <div class="row">
-           <div><?php echo $links; ?></div>
+           <center><?php echo $links; ?></center>
                       </div></div>

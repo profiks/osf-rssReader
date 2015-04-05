@@ -121,44 +121,29 @@ class User extends CI_controller {
 			show_404();
 		}
 
+       
+	    $config = array(); 
+        $config["per_page"] = 20;
+        $config['num_links'] = 20;
+         
         $data['page']= (int)$feed_id;
-        $data['rss'] = $this->feeds_model->rss_posts($feed_id);
+        $data['rss'] = $this->feeds_model->rss_posts($feed_id,$config["per_page"],$this->uri->segment(4));
         $data['parent_link'] = $this->feeds_model->get_feed_link_by_id($feed_id);
 		$data['title'] = "Single";	
+				  
+           
+     
 			
-			
-	$this->load->library('pagination'); 
-	$config = array(); 
+	$this->load->library('pagination');
 	$config["base_url"] = base_url()."index.php/user/single_feed/{$feed_id}/";
-	 $config['total_rows'] = count($data['rss']);	
-	 $config["per_page"] = 10; 
-	 $config["uri_segment"] = 4; 
-	/* // twitter bootstrap markup 
-	 $config['full_tag_open'] = '<ul class="pagination pagination-sm">';
-	 $config['full_tag_close'] = '</ul>';
-	 $config['num_tag_open'] = '<li>';
-	 $config['num_tag_close'] = '</li>';
-	 $config['cur_tag_open'] = '<li class="active"><span>';
-	 $config['cur_tag_close'] = '<span class="sr-only">(current)</span></span></li>';
-	 $config['prev_tag_open'] = '<li>'; 
-	 $config['prev_tag_close'] = '</li>';
-	 $config['next_tag_open'] = '<li>';
-	 $config['next_tag_close'] = '</li>';
-	 $config['first_link'] = '&laquo;';
-	 $config['prev_link'] = '&lsaquo;'; 
-	 $config['last_link'] = '&raquo;'; 
-	 $config['next_link'] = '&rsaquo;'; 
-	 $config['first_tag_open'] = '<li>'; 
-	 $config['first_tag_close'] = '</li>'; 
-	 $config['last_tag_open'] = '<li>'; 
-	 $config['last_tag_close'] = '</li>';*/
-	 $this->pagination->initialize($config);
+	 $config['total_rows'] =count($data['rss']);
+    
+    $this->pagination->initialize($config);
 	 // pass the parameters for per_page, page number, order by, sort, etc here
 	 // generate links 
 	 $data['links'] = $this->pagination->create_links(); 
 	 // pass the data to the view  
  		
-			
 			
 			
 	$this->load->view('header',$data);
