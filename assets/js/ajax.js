@@ -32,43 +32,44 @@ $(document).ready(function(){
         editFeed(this);
     });
     
+  
     
     
  }); //end DOM  
    
-        
+
         
 
         function readFeeds(el){
              event.preventDefault();
              var href = $(el).attr('href');
-            renderFeedsModal(href);
+               $("#read_modal").modal("show");
+                
+                 $('.Feedsposts').rssfeed(''+href+'', {
+                                            limit: 100,
+                                            linktarget: '_blank',
+                                            header : true
+
+                                        },function(){
+                 /*
+                    $(".Feedsposts").mCustomScrollbar({
+                        theme:"dark"
+                        
+                    });*/
+                
+            });
             
             
             
         }
         
-            function renderFeedsModal(href){
-                    $("#read_modal").modal("show");
-                    $("#postName").html(href);
-                    $("#postName").html(href);
-                
-                 $('.Feedsposts').rssfeed(''+href+'', {
-                                            limit: 100,
-                                            linktarget: '_blank',
-                                            header : false
 
-                                        },function(){
-                 
-                  $(window).load(function(){
-                    $(".Feedsposts").mCustomScrollbar();
-                });
-            });
-
-            }
-
-
-             
+        function reload_js(src) {
+        
+        $('script[src="' + src + '"]').remove();
+        $('<script>').attr('src', src).appendTo('.refr');
+        }
+        
 
 
 
@@ -106,7 +107,7 @@ $(document).ready(function(){
                             }, function(e) {
                                 $(e).find('div.rssBody').vTicker('init',{
                                 showItems: 10,
-                                padding:1
+                                padding:2
                                 });
                             });
 

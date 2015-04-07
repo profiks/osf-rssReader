@@ -16,5 +16,4 @@ jQuery(function($) {
 	});
     
     
-    
 });

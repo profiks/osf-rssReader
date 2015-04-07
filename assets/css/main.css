@@ -1119,7 +1119,7 @@ ul.faq li > div h3 {
     height: 40px;
     position: fixed;
     right: 30px;
-    top: 250px;
+    bottom: 200px;
     cursor: pointer;
     z-index: 200;
    
@@ -1132,11 +1132,32 @@ ul.faq li > div h3 {
 }
 
 
+.odd,.even{
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.428571429;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.rssBody ul {
+    padding: 0px;
+}
 
 
+.modal-content{
+    background: #f5f5f5;
+}
 
-
-
+.rssHeader{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
 
 
 

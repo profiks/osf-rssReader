@@ -23,5 +23,7 @@
     <script src="<?=base_url();?>assets/js/vTicker.js"></script> 
     <script src="<?=base_url();?>assets/js/main.js"></script> 
     <script src="<?=base_url();?>assets/js/ajax.js"></script> 
+    
+    <div class="refr"></div>
 </body>
 </html>

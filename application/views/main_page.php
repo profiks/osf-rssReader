@@ -36,13 +36,10 @@
           <div class="modal-dialog">
           <div class="modal-content">
           <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+          <button type="button" class="close refreshScroll" data-dismiss="modal" aria-hidden="true">x</button>
           <h3 id="postName"></h3>
           </div>          
-          <div class="modal-body Feedsposts" >
-                   
-           
-          </div>
+          <div class="modal-body Feedsposts"></div>
                 
              
                 
@@ -50,6 +47,8 @@
            </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
            
+           
+    
 	
             <div class="row">
                <hr class="section-heading-spacer">
