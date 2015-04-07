@@ -1118,7 +1118,7 @@ ul.faq li > div h3 {
     width: 40px;
     height: 40px;
     position: fixed;
-    right: 10px;
+    right: 30px;
     top: 250px;
     cursor: pointer;
     z-index: 200;
@@ -1129,7 +1129,6 @@ ul.faq li > div h3 {
 
 .rssRow{
     list-style: none;
-    height: 150px;
 }
 
 

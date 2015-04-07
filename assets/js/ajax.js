@@ -41,11 +41,34 @@ $(document).ready(function(){
 
         function readFeeds(el){
              event.preventDefault();
-             var id = $(el).attr('id'); 
-            alert(id);
+             var href = $(el).attr('href');
+            renderFeedsModal(href);
+            
+            
+            
         }
+        
+            function renderFeedsModal(href){
+                    $("#read_modal").modal("show");
+                    $("#postName").html(href);
+                    $("#postName").html(href);
+                
+                 $('.Feedsposts').rssfeed(''+href+'', {
+                                            limit: 100,
+                                            linktarget: '_blank',
+                                            header : false
+
+                                        },function(){
+                 
+                  $(window).load(function(){
+                    $(".Feedsposts").mCustomScrollbar();
+                });
+            });
+
+            }
 
 
+             
 
 
 
@@ -81,19 +104,13 @@ $(document).ready(function(){
                                 header : false
 
                             }, function(e) {
-                                $(e).find('div.rssBody').vTicker();
+                                $(e).find('div.rssBody').vTicker('init',{
+                                showItems: 10,
+                                padding:1
+                                });
                             });
 
-                             $('#latest2').rssfeed(''+feed.second.link+'', {
-                                limit: 100,
-                                linktarget: '_blank',
-                                header : false
-
-                            }, function(e) {
-                                $(e).find('div.rssBody').vTicker();
-                            });
         }
-
 
 
         function editForm(el){

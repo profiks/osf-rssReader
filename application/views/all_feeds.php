@@ -12,6 +12,23 @@
  
  <div class="container" style="padding-top: 100px;">
            
+            <div class="modal fade" id="read_modal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+          <div class="modal-content">
+          <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+          <h3 id="postName"></h3>
+          </div>          
+          <div class="modal-body Feedsposts" >
+                   
+           
+          </div>
+                
+             
+                
+            </div>
+           </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
            
           <?php if(!isset($feeds) || empty($feeds)) { ?>
            <p> Here is not feeds !!! </p>
@@ -43,15 +60,14 @@
                             <div class="left clearfix">
                             <div class="chat-body">  
                                    <span class="glyphicon glyphicon-link"></span>
-				   <a class="anchor" id="<?=$value['id']?>" href="/#"><?=$value['link']?></a>
+				    <a class="anchor" href="<?=$value['link']?>"><?=$value['link']?></a>
                                 
                 
                         </div>
                             </div>
 				             </div>
                             </div>        
-                                <?php }
-				?> 
+                                <?php } ?> 
                       
                  </div> 
 </div>

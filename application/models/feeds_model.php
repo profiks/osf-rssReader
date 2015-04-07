@@ -53,7 +53,6 @@ class Feeds_model extends CI_Model{
             $this->db->from('feeds');
             $query = $this->db->get();
             $data['first'] = $query->last_row();
-            $data['second'] = $query->previous_row();
              
 
             

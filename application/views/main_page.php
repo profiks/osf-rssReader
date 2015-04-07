@@ -31,7 +31,25 @@
     <div class="content-section-a">
 
         <div class="container">
-
+        
+ <div class="modal fade" id="read_modal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+          <div class="modal-content">
+          <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+          <h3 id="postName"></h3>
+          </div>          
+          <div class="modal-body Feedsposts" >
+                   
+           
+          </div>
+                
+             
+                
+            </div>
+           </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+           
 	
             <div class="row">
                <hr class="section-heading-spacer">
@@ -60,7 +78,7 @@
                      
                                   <h4><?=$value['title']?></h4>        
                                    
-				   <a class="anchor" id="<?=$value['id']?>" href="/#"><?=$value['link']?></a> </p>
+				   <a class="anchor" href="<?=$value['link']?>"><?=$value['link']?></a> </p>
 				<?php }
 				?>
                                    
@@ -108,7 +126,6 @@
 				 
                                                                       
                                      <div  id="latest"></div>
-                                    <div  id="latest2"></div>
                                
                               
                
