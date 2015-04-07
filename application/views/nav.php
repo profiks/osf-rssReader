@@ -10,6 +10,9 @@
                 <a class="navbar-brand" href="<?=base_url();?>"><img src="<?=base_url()?>assets/images/logo.png" alt="logo"></a>
             </div>
             <div class="collapse navbar-collapse"  style="padding-bottom: 40px;">
+               
+
+               
                 <ul class="nav navbar-nav navbar-right">
                     
                       
@@ -26,18 +29,17 @@
         All feeds <span class="glyphicon glyphicon-bullhorn"></span></a>
         </li>
            
-             <li <?php if ($this->uri->segment(2) == 'all_news') {echo"class='active'";}?>>
+          <li <?php if ($this->uri->segment(2) == 'manage_feeds') {echo"class='active'";}?>>
        
-        <a href="<?=base_url();?>index.php/user/all_news/">
-        All news <span class="glyphicon glyphicon-list"></span></a>
+        <a href="<?=base_url();?>index.php/user/manage_feeds/">
+        Manage feeds <span class="glyphicon glyphicon-cog"></span></a>
         </li> 
-            
-            
-      
-        
+           
        
-        
-        
+             
+             
+            
+            
         
             
            
@@ -47,10 +49,11 @@
                 </ul>                     
                             
                             
-                            
+                                         
                
             </div>
         </div>
         
-        
+       
     </header><!--/header-->
+     <img src="<?=base_url()?>assets/images/up-arrow-icon.png" class="scrollToTop">  

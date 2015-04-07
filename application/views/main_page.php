@@ -51,7 +51,7 @@
                         <div class="panel-body">
                            
                                 <div class="left clearfix">
-            <div class="chat-body mCustomScrollbar" id="scrolling" data-mcs-theme="dark" style="height:200px;">  
+            <div class="chat-body mCustomScrollbar" id="scrolling" data-mcs-theme="dark" style="height:300px;">  
 				 
                                                                       
                                        <?php
@@ -60,7 +60,7 @@
                      
                                   <h4><?=$value['title']?></h4>        
                                    
-				   <a href="<?=base_url();?>index.php/user/single_feed/<?=$value['id']?>"><?=$value['link']?></a> </p>
+				   <a class="anchor" id="<?=$value['id']?>" href="/#"><?=$value['link']?></a> </p>
 				<?php }
 				?>
                                    
@@ -79,10 +79,7 @@
 			   
 			   
 			
-                       <p><span class="glyphicon glyphicon-cog"></span>    <?php
-
-echo anchor('user/manage_feeds/', 'Manage feeds');
-			   ?></p>
+                      
                        
                         </div>
 
@@ -107,16 +104,13 @@ echo anchor('user/manage_feeds/', 'Manage feeds');
                         <div class="panel-body">
                            
                                 <div class="left clearfix">
-            <div class="chat-body mCustomScrollbar" id="scrolling" data-mcs-theme="dark" style="height:260px;">  
+            <div class="chat-body mCustomScrollbar" id="scrolling" data-mcs-theme="dark" style="height:300px;">  
 				 
                                                                       
-                                       <?php
-				foreach ($latest as $item){ ?>
-				<p> 
-                     <h4><a href='<?=$item['link'];?>' target='_blank'><?=$item['title'];?></a></h4>
-            <p><?=$item['description'];?></p>
-                                   
-                               <? } ?>    
+                                     <div  id="latest"></div>
+                                    <div  id="latest2"></div>
+                               
+                              
                
                                       </div>
                                 </div>

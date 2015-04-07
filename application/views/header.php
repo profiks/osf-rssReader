@@ -15,6 +15,6 @@
     <script src="<?=base_url();?>assets/js/respond.min.js"></script>
     <![endif]-->       
     <link rel="shortcut icon" href="<?=base_url();?>favicon.ico">
- 
+     <script src="<?=base_url();?>assets/js/jquery-2.1.0.min.js"></script>
 </head><!--/head-->
 <body>

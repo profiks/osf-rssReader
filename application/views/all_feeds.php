@@ -43,7 +43,7 @@
                             <div class="left clearfix">
                             <div class="chat-body">  
                                    <span class="glyphicon glyphicon-link"></span>
-				   <a href="<?=base_url();?>index.php/user/single_feed/<?=$value['id']?>"><?=$value['link']?></a> 
+				   <a class="anchor" id="<?=$value['id']?>" href="/#"><?=$value['link']?></a>
                                 
                 
                         </div>

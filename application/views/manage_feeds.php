@@ -11,13 +11,7 @@
     </section><!--/#title-->
  
  <div class="container" style="padding-top: 100px;">
-           
-           
-          <?php if(!isset($feeds) || empty($feeds)) { ?>
-           <p> Here is not feeds !!! </p>
-          <?php }
-          
-          ?>
+ 
           <!-- loader image-->
 <noscript>
 <div id="indicator" style="display:block;text-align: center;" class="loading_img">

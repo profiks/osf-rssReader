@@ -1107,3 +1107,37 @@ ul.faq li > div h3 {
     background: #34495E;
     color: #fff;
 }
+
+
+#editableInfo .form-group{
+    padding: 0 0 35px 0;
+}
+
+.scrollToTop {
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 10px;
+    top: 250px;
+    cursor: pointer;
+    z-index: 200;
+   
+    
+}
+
+
+.rssRow{
+    list-style: none;
+    height: 150px;
+}
+
+
+
+
+
+
+
+
+
+

@@ -7,7 +7,7 @@
     <link>http://www.bbc.co.uk/news/health/#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
     <description>The latest stories from the Health section of the BBC News web site.</description>  
     <language>en-gb</language>  
-    <lastBuildDate>Fri, 03 Apr 2015 23:09:39 GMT</lastBuildDate>  
+    <lastBuildDate>Mon, 06 Apr 2015 01:58:15 GMT</lastBuildDate>  
     <copyright>Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.</copyright>  
     <image> 
       <url>http://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>  
@@ -18,6 +18,24 @@
     </image>  
     <ttl>15</ttl>  
     <atom:link href="http://feeds.bbci.co.uk/news/health/rss.xml" rel="self" type="application/rss+xml"/>  
+    <item> 
+      <title>Skin cancer 'linked to holiday boom'</title>  
+      <description>A boom in cheap package holidays in the 1960s is partly behind the "worrying rise" in skin cancers in pensioners, Cancer Research UK suggests.</description>  
+      <link>http://www.bbc.co.uk/news/health-32150519#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32150519</guid>  
+      <pubDate>Mon, 06 Apr 2015 00:39:56 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82062000/jpg/_82062911_sunbathethinkstockphotos-483718387.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82062000/jpg/_82062912_sunbathethinkstockphotos-483718387.jpg"/> 
+    </item>  
+    <item> 
+      <title>80,000 'might die' in future outbreak</title>  
+      <description>About 80,000 people could die if there were a "widespread outbreak" of an antibiotic-resistant blood infection, according to a government document.</description>  
+      <link>http://www.bbc.co.uk/news/uk-32193606#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-32193606</guid>  
+      <pubDate>Mon, 06 Apr 2015 01:56:04 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82140000/jpg/_82140912_82140871.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82140000/jpg/_82140913_82140871.jpg"/> 
+    </item>  
     <item> 
       <title>Public 'back tax rises to fund NHS'</title>  
       <description>A majority of people in Britain support tax rises as a way of funding the NHS ahead of cuts to other public services, a poll suggests.</description>  
@@ -118,24 +136,6 @@
       <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82035000/jpg/_82035807_thinkstockphotos-517221919.jpg"/> 
     </item>  
     <item> 
-      <title>MS drug 'may already be out there'</title>  
-      <description>Depression and heart disease drugs are to be tested in a new trial to find treatments for Multiple Sclerosis (MS).</description>  
-      <link>http://www.bbc.co.uk/news/health-32136208#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32136208</guid>  
-      <pubDate>Tue, 31 Mar 2015 17:00:41 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82038000/jpg/_82038146_c0167299-fluoxetine_capsule-spl.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82038000/jpg/_82038147_c0167299-fluoxetine_capsule-spl.jpg"/> 
-    </item>  
-    <item> 
-      <title>More veterans seek mental health aid</title>  
-      <description>A mental health charity which treats military veterans says referrals have increased by 26% in the last year.</description>  
-      <link>http://www.bbc.co.uk/news/uk-32126052#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/uk-32126052</guid>  
-      <pubDate>Mon, 30 Mar 2015 23:45:59 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82020000/jpg/_82020328_74776368.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82020000/jpg/_82020329_74776368.jpg"/> 
-    </item>  
-    <item> 
       <title>Medieval eye remedy 'kills MRSA'</title>  
       <description>A 1,000-year-old treatment for eye infections could hold the key to killing antibiotic-resistant superbugs, scientists say.</description>  
       <link>http://www.bbc.co.uk/news/uk-england-nottinghamshire-32117815#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
@@ -179,6 +179,24 @@
       <pubDate>Sun, 15 Mar 2015 10:13:53 GMT</pubDate>  
       <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/81625000/jpg/_81625918_endoflife_care.jpg"/>  
       <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/81625000/jpg/_81625999_endoflife_care.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Skin cancer spike 'from 60s holidays'</title>  
+      <description>A boom in cheap package holidays in the 1960s is partly behind the "worrying rise" in skin cancers in pensioners, Cancer Research UK suggests.</description>  
+      <link>http://www.bbc.co.uk/news/health-32193785#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32193785</guid>  
+      <pubDate>Mon, 06 Apr 2015 06:10:03 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82141000/jpg/_82141510_82141459.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82141000/jpg/_82141511_82141459.jpg"/> 
+    </item>  
+    <item> 
+      <title>VIDEO: Health surcharge for non-EU patients</title>  
+      <description>From 6 April, all nationals from outside of Europe coming to live in the UK for longer than six months will be required to pay a surcharge.</description>  
+      <link>http://www.bbc.co.uk/news/health-32193813#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
+      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32193813</guid>  
+      <pubDate>Mon, 06 Apr 2015 06:52:10 GMT</pubDate>  
+      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82141000/jpg/_82141601_82141470.jpg"/>  
+      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82141000/jpg/_82141602_82141470.jpg"/> 
     </item>  
     <item> 
       <title>VIDEO: Welcome to the designer asylum</title>  
@@ -233,24 +251,6 @@
       <pubDate>Tue, 31 Mar 2015 07:24:42 GMT</pubDate>  
       <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82022000/jpg/_82022342_82022173.jpg"/>  
       <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82022000/jpg/_82022343_82022173.jpg"/> 
-    </item>  
-    <item> 
-      <title>VIDEO: Nursing code of conduct launched</title>  
-      <description>A new code of conduct has been launched by the body that oversees 670,000 nurses and midwives in the UK.</description>  
-      <link>http://www.bbc.co.uk/news/health-32127896#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32127896</guid>  
-      <pubDate>Tue, 31 Mar 2015 08:17:20 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/82024000/jpg/_82024473_82022961.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/82024000/jpg/_82024474_82022961.jpg"/> 
-    </item>  
-    <item> 
-      <title>VIDEO: Vaccine to protect from meningitis B</title>  
-      <description>An agreement has been reached to provide a meningitis B vaccine for all babies in the UK, the BBC's Sarah Campbell reports.</description>  
-      <link>http://www.bbc.co.uk/news/health-32104724#sa-ns_mchannel=rss&amp;ns_source=PublicRSS20-sa</link>  
-      <guid isPermaLink="false">http://www.bbc.co.uk/news/health-32104724</guid>  
-      <pubDate>Sun, 29 Mar 2015 12:31:19 GMT</pubDate>  
-      <media:thumbnail width="66" height="49" url="http://news.bbcimg.co.uk/media/images/81986000/jpg/_81986629_syringe.jpg"/>  
-      <media:thumbnail width="144" height="81" url="http://news.bbcimg.co.uk/media/images/81987000/jpg/_81987054_syringe.jpg"/> 
     </item>  
     <item> 
       <title>Five ideas to transform the NHS</title>  

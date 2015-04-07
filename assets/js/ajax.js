@@ -1,44 +1,101 @@
 $(document).ready(function(){
   
+  
+    
+    
+    
+    
+    
     addLink();       
     getFeedsList();
-    
+    latestFeeds();
     
     
     // when click Add Feed apear modal window to create new Rss source
     $(document).on("click", "a#addFeed", function(){ getCreateForm(this);});
     
     
-    $(document).on("submit", "#infoClient", function(event){ 
+    $(document).on("click", "a.anchor", function(){readFeeds(this);});
+    
+    
+    $(document).on("submit", "#infoFeed", function(event){ 
         event.preventDefault();
-        addClient(this);
+        addFeed(this);
     });
     
     $(document).on("click", "a.delete_confirm", function(){ deleteConfirmation(this); });
-    $(document).on("click", "button.delete", function(){ delClient(this); });
+    $(document).on("click", "button.delete", function(){ delFeed(this); });
     
     $(document).on("click", "a.edit_confirm", function(){ editForm(this); });
     $(document).on("submit", "#editableInfo", function(event){ 
         event.preventDefault();
-        editClient(this);
+        editFeed(this);
     });
     
     
     
  }); //end DOM  
    
-   
+        
+        
+
+        function readFeeds(el){
+             event.preventDefault();
+             var id = $(el).attr('id'); 
+            alert(id);
+        }
+
+
+
+
+
     
-            function delClient(){
-                $.post( "/main/del/",
-                      { id: $('#delete_confirm_modal input#user_id').val() },
+            function delFeed(){
+                $.post( "/index.php/user/del_feed",
+                      { id: $('#delete_confirm_modal input#feed_id').val() },
                       function (){
-                getUserList();
+                getFeedsList();
                 $("#delete_confirm_modal").modal("hide");
                       });
                 
             }
         
+        function latestFeeds(){
+        $.post('/index.php/user/latest_aded_feeds',{},
+                function(data) {
+                     renderLatestNews(data)
+                        
+                    }
+                
+                );
+        }
+
+        function renderLatestNews(jsonData){
+            
+                     var feed = jQuery.parseJSON(jsonData);
+                        
+                        
+                          $('#latest').rssfeed(''+feed.first.link+'', {
+                                limit: 100,
+                                linktarget: '_blank',
+                                header : false
+
+                            }, function(e) {
+                                $(e).find('div.rssBody').vTicker();
+                            });
+
+                             $('#latest2').rssfeed(''+feed.second.link+'', {
+                                limit: 100,
+                                linktarget: '_blank',
+                                header : false
+
+                            }, function(e) {
+                                $(e).find('div.rssBody').vTicker();
+                            });
+        }
+
+
+
         function editForm(el){
             
             var id = $(el).attr('feed_id');             
@@ -66,44 +123,54 @@ $(document).ready(function(){
             modal += '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>';
             modal += '<h3>Edit current Feed source</h3>';
             modal += '</div>';
+            
             modal += '<div class="modal-body">';
             modal +='<form id="editableInfo">';
         
-            modal += '<div  class="">'; 
+           
             
             modal += '<div class="form-group">';
-            modal += '<label for="Title"  class="control-label">Title</label>';
+            modal += '<label for="Title"  class="control-label col-xs-3">Title</label>';
+            modal += '<div class="col-xs-9">';
             modal += '<input name="Title" type="text" id="title" placeholder="Name" class="form-control" value="'+feeds.title+'" required pattern="[a-zA-Z]+" autocomplete="off">';
             modal += '</div>';
+            modal += '</div>';
             
             modal += '<div class="form-group">';
-            modal += '<label for="link" class="control-label">Link</label>';
+            modal += '<label for="link" class="control-label col-xs-3">Link</label>';
+            modal += '<div class="col-xs-9">';
             modal += '<input name="link" id="link" placeholder="valid rss url" class="form-control"  type="url" value="'+feeds.link+'" required pattern="https?://.+" autocomplete="off">';
+            modal += '</div>';
             modal += '</div>';
             
             
             
             modal += '<div class="form-group">';
-            modal += '<label for="favourite" class="control-label">Favourite</label>';
-            modal += '<input name="favourite" id="favourite" placeholder="Favourite" class="form-control" value="'+feeds.favourite+'" type="radio"';
+            modal += '<label for="favourite" class="control-label col-xs-3">Favourite</label>';
+            modal += '<div class="col-xs-9">';
+            modal += '<input name="favourite" id="favourite" value="'+feeds.favourite+'" type="radio">';
+            modal += '</div>';
             modal += '</div>';
             
             
             
           
             
+           
             modal += '<div class="modal-footer">';
             
-            modal += '<div class="">';
             modal += '<button  id="edit_feed" class="btn btn-primary">Save changes</button>';
             modal += '<button class="btn pull-right" data-dismiss="modal" aria-hidden="true">Cancel</button>';
             modal += '</div>';
-            modal += '</div>';
+            
+            
             
             modal+='</form>';
             
             modal += ' <input type="hidden" id="feed_id" value="'+feeds.id+'" />';
             modal += ' </div>';
+            
+            
             modal += ' </div><!-- /.modal-content -->';
             modal += '</div><!-- /.modal-dialog -->';
             modal += ' </div><!-- /.modal -->';
@@ -114,38 +181,29 @@ $(document).ready(function(){
            ValidForm('#editableInfo');
         }
         
-        function editClient(){
+        function editFeed(){
             
-            $.post('/main/edit/',
-            {        id         :  $('input#user_id').val(),
-                     number     :  $('input#number').val(),
-                     name       :  $('input#name').val(),
-                     last_name  :  $('input#last_name').val(),
-                     email      :  $('input#email').val(),
-                     adress     :  $('input#adress').val(),
-                     city       :  $('input#city').val(),
-                     country    :  $('input#country').val()
-            },function(data){
+            $.post('/index.php/user/edit_feed',
+            {        id         :  $('input#feed_id').val(),
+                     title      :  $('input#title').val(),
+                     link       :  $('input#link').val(),
+                     favourite  :  $('input#favourite').val(),
+            },function(data){                
                 $("#edit_form").modal("hide");
-                    getUserList();
+                    getFeedsList();
             });
             
             
         }
         
         
-          function addClient(){
-            $.post('/main/add/',
-            {        number     :  $('input#number').val(),
-                     name       :  $('input#name').val(),
-                     last_name  :  $('input#last_name').val(),
-                     email      :  $('input#email').val(),
-                     adress     :  $('input#adress').val(),
-                     city       :  $('input#city').val(),
-                     country    :  $('input#country').val()
+          function addFeed(){
+            $.post('/index.php/user/add_feed',
+            {        title    :  $('input#title').val(),
+                     link       :  $('input#link').val()
             },function(data){
                 $("#add_modal").modal("hide");
-                    getUserList();
+                    getFeedsList();
             });
             
         }
@@ -238,7 +296,7 @@ $(document).ready(function(){
             $('div#modal').html(form);            
             $("#add_modal").modal("show");
             
-            ValidForm('#infoClient');
+            ValidForm('#infoFeed');
             
         }
          
@@ -289,38 +347,16 @@ $(document).ready(function(){
             $(elem).validate({
            
             "rules" : {
-                "number" :{
+                "title" :{
               "minlength":1,
-                 "maxlength":8,
-                   "required" : true,
-                   "number": true
+                 "maxlength":100,
+                   "required" : true
                  },
-                 "name" :{
-                    "minlength":2,
+                 "link" :{
+                    "minlength":8,
                     "maxlength":100,
                     "required" : true
-                },
-                 "last_name" :{
-                    "minlength":2,
-                    "maxlength":150,
-                    "required" : true
-                 },
-                 "email" :{
-                    "required" : true,
-                     "email": true
-                 },
-                 "adress" :{
-                        "required" : true,
-                    "maxlength":200
-                 },
-                 "city" :{
-                        "required" : true,
-                    "maxlength":150
-                 },
-                 "country" :{
-                        "required" : true,
-                    "maxlength":100
-                 }
+                }
             }
                     });
         

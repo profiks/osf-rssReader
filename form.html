@@ -1,0 +1,47 @@
+<div class="modal-content">
+
+
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+<h3>Edit current Feed source</h3>
+</div>
+
+
+<div class="modal-body">
+
+<form id="editableInfo" novalidate="novalidate">
+
+
+<div class="form-group">
+<label for="Title" class="control-label col-xs-3">Title</label>
+<div class="col-xs-9">
+<input name="Title" type="text" id="title" placeholder="Name" class="form-control" value="wrerwr" required="" pattern="[a-zA-Z]+" autocomplete="off" aria-required="true"></div>
+</div>
+
+<div class="form-group">
+<label for="link" class="control-label col-xs-3">Link</label>
+<div class="col-xs-9">
+<input name="link" id="link" placeholder="valid rss url" class="form-control" type="url" value="http://feeds.bbci.co.uk/news/health/rss.xml" required="" pattern="https?://.+" autocomplete="off" aria-required="true">
+</div>
+</div>
+
+<div class="form-group">
+<label for="favourite" class="control-label col-xs-3">Favourite</label>
+<div class="col-xs-9">
+<input name="favourite" id="favourite" value="1" type="radio">
+</div>
+</div>
+
+<div class="modal-footer">
+<button id="edit_feed" class="btn btn-primary">Save changes</button>
+<button class="btn pull-right" data-dismiss="modal" aria-hidden="true">Cancel</button>
+</div> 
+
+
+<input type="hidden" id="feed_id" value="10"> 
+
+</form>
+
+  </div>
+  
+  </div><!-- /.modal-content -->
