@@ -5,10 +5,17 @@
            
             <div class="row">
                 <div class="col-sm-6">
-                    &copy;  <?=date('Y')?> <a target="_blank" href="http://www.osf-global.com/" >
-                    OSF Global Services </a>
+                      
+                      Developed by Denys Arkan <img src="<?=base_url()?>assets/images/OSF.png" alt="logo">
+                   
                 </div>
                 <div class="col-sm-6">
+                   <div class="pull-right">
+                        Copyright
+                    <a target="_blank" href="http://www.osf-global.com/" >
+                    OSF Global Services </a> <?=date('Y')?> 
+                       
+                   </div>
                    
                 </div>
             </div>

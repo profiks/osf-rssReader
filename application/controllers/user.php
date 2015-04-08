@@ -176,7 +176,11 @@ class User extends CI_controller {
             $id = $this->input->post('id'); 
 
 
-                $feeds= $this->feeds_model->get_feed_settings($id);     
+                $feeds= $this->feeds_model->get_feed_settings($id); 
+                if($feeds['favourite'] == 1) {
+                    $feeds['checked'] = "checked";
+                } 
+            
              print json_encode($feeds);	
 
         }else {

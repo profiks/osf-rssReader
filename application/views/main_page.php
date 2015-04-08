@@ -18,7 +18,7 @@
 		    a personalized web page. RSS keeps you up-to-the-moment on your favorite news sources,
 		    providing an indicator when news breaks. You may use any of the popular RSS readers to
 		    organize your own feeds.
-		   
+		    
 		    
 		    </p>
                 </div>
@@ -64,7 +64,7 @@
 			 <div class="chat-panel panel panel-default chat-boder chat-panel-head" id="customScrollbar">
                         <div class="panel-heading">
                             <i class="glyphicon glyphicon-star"></i>
-                            Favourites Feeds
+                           Favorites  Feeds
                             <div class="btn-group pull-right">
                                 
                             </div>

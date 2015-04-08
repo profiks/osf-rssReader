@@ -162,7 +162,15 @@ $(document).ready(function(){
             modal += '<div class="form-group">';
             modal += '<label for="favourite" class="control-label col-xs-3">Favourite</label>';
             modal += '<div class="col-xs-9">';
-            modal += '<input name="favourite" id="favourite" value="1" type="radio">';
+            
+             modal +=  '<label for="favourite" class="labelForFavourite">';
+             modal +=  '<input name="favourite" type="checkbox" id="favourite" value="1" '+feeds.checked+'>';
+             modal +=  '<i></i>';
+             modal +=  '</label>';
+            
+           // modal += '<input name="favourite" id="favourite" value="1" type="checkbox" '+feeds.checked+'>';
+            
+            
             modal += '</div>';
             modal += '</div>';
             

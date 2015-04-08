@@ -7,7 +7,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?=base_url();?>"><img src="<?=base_url()?>assets/images/logo.png" alt="logo"></a>
+               
+               
+                  <a class="navbar-brand" style="display:inline-block;" href="<?=base_url();?>">
+                  <img src="<?=base_url()?>assets/images/logo.png" alt="logo">
+                  
+                  <div class="loader-inner ball-scale-multiple">
+		    <div></div> 
+		    <div></div>
+		    <div></div>
+		    <div></div>
+		    </div>
+                  </a>
             </div>
             <div class="collapse navbar-collapse"  style="padding-bottom: 40px;">
                

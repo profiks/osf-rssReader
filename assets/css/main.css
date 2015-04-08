@@ -1169,3 +1169,114 @@ ul.faq li > div h3 {
   content: "\e007";
 }
 
+
+
+
+
+/* check box style*/
+
+
+@-webkit-keyframes
+icon-beat {  0% {
+ -webkit-transform: scale(2);
+ -ms-transform: scale(2);
+ transform: scale(2);
+}
+
+ 100% {
+ -webkit-transform: scale(1);
+ -ms-transform: scale(1);
+ transform: scale(1);
+}
+
+} 
+
+@keyframes
+icon-beat {  0% {
+ -webkit-transform: scale(2);
+ -ms-transform: scale(2);
+ transform: scale(2);
+}
+
+ 100% {
+ -webkit-transform: scale(1);
+ -ms-transform: scale(1);
+ transform: scale(1);
+}
+
+}
+
+
+
+
+ 
+
+.labelForFavourite {
+  display: block;
+  position: relative;
+  line-height: 28px;
+  font-weight: normal;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+ 
+.labelForFavourite:last-of-type { margin-right: 1rem; }
+ 
+.labelForFavourite i {
+  display: inline-block;
+  height: 25px;
+  position: relative;
+  top: 6px;
+  font-style: normal;
+  color: #ccc;
+}
+ 
+.labelForFavourite span {
+  display: inline-block;
+  line-height: 25px;
+  color: gray;
+}
+ 
+#favourite { display: none; }
+ 
+#favourite + i:before {
+  font-family: 'FontAwesome';
+  font-size: 28px;
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+}
+ 
+#favourite:checked + i {
+  position: relative;
+  -webkit-animation: icon-beat 0.1s ease;
+  animation: icon-beat 0.1s ease;
+}
+ 
+#favourite:checked + i + span {
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+ 
+ 
+#favourite + i:before { content: "\f096"; }
+ 
+#favourite:checked + i:before { content: "\f046"; }
+ 
+#favourite:checked + i + span,
+#favourite:checked + i:before { color: rgba(0, 128, 0, 0.5); }
+
+
+
+
+
+/*loader*/
+
+.ball-scale-multiple>div {
+  background: #2ecc71;
+    margin: -19px 0 0 -30px;
+    width: 70px;
+    height: 70px;
+}
+
+
