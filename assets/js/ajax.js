@@ -32,8 +32,7 @@ $(document).ready(function(){
         editFeed(this);
     });
     
-  
-    
+
     
  }); //end DOM  
    
@@ -45,19 +44,12 @@ $(document).ready(function(){
              var href = $(el).attr('href');
                $("#read_modal").modal("show");
                 
-                 $('.Feedsposts').rssfeed(''+href+'', {
+                 $('#resul').rssfeed(''+href+'', {
                                             limit: 100,
                                             linktarget: '_blank',
                                             header : true
 
-                                        },function(){
-                 /*
-                    $(".Feedsposts").mCustomScrollbar({
-                        theme:"dark"
-                        
-                    });*/
-                
-            });
+                                        });
             
             
             

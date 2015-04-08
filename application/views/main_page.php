@@ -38,8 +38,13 @@
           <div class="modal-header">
           <button type="button" class="close refreshScroll" data-dismiss="modal" aria-hidden="true">x</button>
           <h3 id="postName"></h3>
-          </div>          
-          <div class="modal-body Feedsposts"></div>
+          </div>         
+          <!-- Feedsposts-->
+           
+          <div  class="modal-body mCustomScrollbar" data-mcs-theme="dark" style="height:600px;">
+              
+              <div id="resul"></div>
+          </div>
                 
              
                 
