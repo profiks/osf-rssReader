@@ -34,6 +34,10 @@ $(document).ready(function(){
     
 
     
+      
+    
+   
+    
  }); //end DOM  
    
 
@@ -232,21 +236,27 @@ $(document).ready(function(){
 
         function renderFeedsList(jsonData) {
          
-            var table = '<div class="table-responsive"><table width="800" cellpadding="5" class="table table-hover table-bordered"><thead><tr><th scope="col">Link</th><th scope="col">Title</th><th scope="col">Favourite</th><th scope="col">Actions</th></tr></thead><tbody>';
+            var table = '<div class="table-responsive" id="feedsList"><table width="800" cellpadding="5" class="table table-hover table-bordered"><thead><tr><th scope="col">Link</th><th scope="col">Title</th><th scope="col">Favourite</th><th scope="col">Actions</th></tr></thead><tbody>';
             var feeds = jQuery.parseJSON(jsonData);           
             
             $.each(feeds, function(index, feed){
             table += '<tr>';
             table += '<td field="link" >'+feed.link+'</td>';
             table += '<td field="title" >'+feed.title+'</td>';
-            table += '<td field="favourite" >'+feed.favourite+'</td>';            
-            table += '<td><a href="javascript:void(0);" feed_id="'+feed.id+'" class="delete_confirm"><i class="glyphicon glyphicon-trash"></i></a> <a href="javascript:void(0);" feed_id="'+feed.id+'" class="edit_confirm"><span class="glyphicon glyphicon-edit"></span></a></td>';
+            table += '<td field="favourite" style="text-align:center;"><span class="glyphicon star'+feed.favourite+'"></span></td>';            
+            table += '<td style="text-align:center;"><a href="javascript:void(0);" feed_id="'+feed.id+'" class="delete_confirm"><i class="glyphicon glyphicon-trash"></i></a> <a href="javascript:void(0);" feed_id="'+feed.id+'" class="edit_confirm"><span class="glyphicon glyphicon-edit"></span></a></td>';
             table += '</tr>';
+               
             });
          
-            table += '</tbody></table></div>';            
+            table += '</tbody></table></div>'; 
+           
+            
             $('div#response').html(table);
+            
         }
+
+ 
 
 
 

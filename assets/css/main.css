@@ -1161,3 +1161,11 @@ ul.faq li > div h3 {
 
 
 
+.star1:before {
+  content: "\e006";
+}
+
+.star0:before {
+  content: "\e007";
+}
+
