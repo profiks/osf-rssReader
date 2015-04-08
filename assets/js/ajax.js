@@ -162,7 +162,7 @@ $(document).ready(function(){
             modal += '<div class="form-group">';
             modal += '<label for="favourite" class="control-label col-xs-3">Favourite</label>';
             modal += '<div class="col-xs-9">';
-            modal += '<input name="favourite" id="favourite" value="'+feeds.favourite+'" type="radio">';
+            modal += '<input name="favourite" id="favourite" value="1" type="radio">';
             modal += '</div>';
             modal += '</div>';
             
@@ -195,13 +195,17 @@ $(document).ready(function(){
            ValidForm('#editableInfo');
         }
         
+    
+
+
+
         function editFeed(){
             
             $.post('/index.php/user/edit_feed',
             {        id         :  $('input#feed_id').val(),
                      title      :  $('input#title').val(),
                      link       :  $('input#link').val(),
-                     favourite  :  $('input#favourite').val(),
+                     favourite  :  $('input#favourite:checked').val(),
             },function(data){                
                 $("#edit_form").modal("hide");
                     getFeedsList();

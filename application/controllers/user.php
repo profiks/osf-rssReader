@@ -78,11 +78,13 @@ class User extends CI_controller {
        if ($this->input->is_ajax_request()) {
            
                $id = $this->input->post('id');
-                
+                $favourite = $this->input->post('favourite');
+                if(!$favourite) {$favourite = 0;}
+           
                 $data = array(
                'link' =>  $this->input->post('link'),
                'title' => $this->input->post('title'),               
-               'favourite' => $this->input->post('favourite')
+               'favourite' => $favourite
                 );
            
            
