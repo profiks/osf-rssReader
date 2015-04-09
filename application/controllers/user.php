@@ -17,10 +17,8 @@ class User extends CI_controller {
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->library('grocery_CRUD');
 		$this->load->model('feeds_model');
 		$this->load->library('form_validation');
-		$this->load->library('rssparser');
 		$this->load->helper('form');
 	}
 	

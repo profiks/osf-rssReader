@@ -64,11 +64,11 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'rss',
+	'hostname' => 'sqlite:'.APPPATH.'db/rss-feeds.sqlite',
+	'username' => '',
 	'password' => '',
-	'database' => 'demo-rss',
-	'dbdriver' => 'mysql',
+	'database' => '',
+	'dbdriver' => 'pdo',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => TRUE,
