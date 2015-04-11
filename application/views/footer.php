@@ -28,6 +28,7 @@
     <script src="<?=base_url();?>assets/js/jquery.validate.min.js"></script>
     <script src="<?=base_url();?>assets/js/jquery.zrssfeed.min.js"></script> 
     <script src="<?=base_url();?>assets/js/vTicker.js"></script> 
+    <script src="<?=base_url();?>assets/js/fileinput.min.js"></script> 
     <script src="<?=base_url();?>assets/js/main.js"></script> 
     <script src="<?=base_url();?>assets/js/ajax.js"></script> 
     

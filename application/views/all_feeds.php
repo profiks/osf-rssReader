@@ -38,7 +38,7 @@
           
           ?>
           
-         <div class="col-md-7">
+         <div class="col-md-12">
               
          
                             
@@ -49,6 +49,8 @@
          
                              <?php
 				foreach ($feeds as $value){ ?>
+                                 <div class="col-md-5">
+                                 
                                   <div class="chat-panel panel panel-default chat-boder chat-panel-head">
                         <div class="panel-heading"> <i class="glyphicon glyphicon-flag"></i>
                            <? if(!empty($value['title'])){
@@ -68,7 +70,9 @@
                         </div>
                             </div>
 				             </div>
-                            </div>        
+                            </div> 
+                               
+                                      </div>       
                                 <?php } ?> 
                       
                  </div> 

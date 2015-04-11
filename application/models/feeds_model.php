@@ -90,6 +90,10 @@ class Feeds_model extends CI_Model{
                 $this->db->insert('feeds', $data); 
 		    
 	       }
+    
+           /* function insert_bach_data($data){
+                 $this->db->insert_batch('feeds',$data);
+            }*/
             
     
             function update_feed($id,$data){

@@ -42,6 +42,100 @@ class User extends CI_controller {
     
     
     
+    public function export_data(){
+        
+        // Load the DB utility class
+        $this->load->dbutil();
+
+        // Backup your entire database and assign it to a variable
+        $backup = $this->db->query("SELECT * FROM feeds");
+        $delimiter = ",";
+        $newline = "\r\n";
+
+        $backup = $this->dbutil->csv_from_result($backup, $delimiter, $newline);
+
+        // Load the file helper and write the file to your server
+        $this->load->helper('file');
+        write_file('feeds.csv', $backup); 
+
+        // Load the download helper and send the file to your desktop
+        $this->load->helper('download');
+        force_download('feeds.csv', $backup); 
+        
+    
+    }
+    
+    function do_upload(){
+                $config['upload_path'] = './uploads/';
+                $config['allowed_types'] = 'csv';
+                $config['max_size']  = '5000';
+                $with = ' ';
+                $replace = '"';
+
+                $this->load->library('upload', $config);
+
+                if (!$this->upload->do_upload())
+                {
+                    redirect('user/manage_feeds/');
+                }
+                else
+                {
+            //Insert file info into database
+            $data = array('upload_data' => $this->upload->data());
+            $userfile = $data['upload_data']['file_name'];
+                    
+                        $filePath1 = './uploads/';
+            $filePath2 = $data['upload_data']['file_name'];
+            $filePath = $filePath1 . $filePath2;
+                         
+               $result_array = $this->csv_to_array($filePath); 
+                    
+                    foreach ($result_array as $row) {
+                    $insert_data = array(
+                        'title'=>$row['title'],
+                        'link'=>$row['link'],
+                        'favourite'=>$row['favourite'],
+                    );
+                      
+                      
+                     $this->feeds_model->insert_feed($insert_data);
+                            
+                     
+                         
+                        
+                    
+                } 
+                    
+                   
+                  redirect('user/manage_feeds/');  
+                    
+             }
+    }
+    
+    function csv_to_array($file_name) {
+        $data =  $header = array();
+        $i = 0;
+        $file = fopen($file_name, 'r');
+        while (($line = fgetcsv($file)) !== FALSE) {
+            if( $i==0 ) {
+                $header = $line;
+            } else {
+                $data[] = $line;        
+            }
+            $i++;
+        }
+        fclose($file);
+        foreach ($data as $key => $_value) {
+            $new_item = array();
+            foreach ($_value as $key => $value) {
+                $new_item[ $header[$key] ] =$value;
+            }
+            $_data[] = $new_item;
+        }
+        return $_data;
+    }
+    
+    
     
     
     

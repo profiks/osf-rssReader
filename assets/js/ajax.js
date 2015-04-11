@@ -6,7 +6,7 @@ $(document).ready(function(){
     
     
     
-    addLink();       
+    addLink();     exportLink(); 
     getFeedsList();
     latestFeeds();
     
@@ -368,10 +368,16 @@ $(document).ready(function(){
       
       function addLink(){
         
-        var link ='<p><span class="glyphicon glyphicon-plus-sign"></span> <a href="javascript:void(0);" id="addFeed" >Add Feed</a></p>';
+        var link ='<a class="btn btn-primary manage"  href="javascript:void(0);" id="addFeed" ><span class="glyphicon glyphicon-plus-sign"></span> Add Feed</a>';
         $('div.addLink').html(link);
       }
+       
+
+        function exportLink(){
+        var link ='<a class="btn btn-primary manage" href="/index.php/user/export_data/"><span class="glyphicon glyphicon-floppy-save"></span> Export Feeds</a>';
+        $('div.exportLink').html(link);  
         
+        }
 
 
       function ValidForm(elem){

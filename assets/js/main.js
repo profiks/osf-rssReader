@@ -16,4 +16,11 @@ jQuery(function($) {
 	});
     
     
+     $("#input-42").fileinput({
+                        maxFileCount: 1,
+                        allowedFileExtensions: ["csv"]
+                    });
+    
+    
+    
 });

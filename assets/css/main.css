@@ -1280,3 +1280,26 @@ icon-beat {  0% {
 }
 
 
+.manage{
+    background: #34495E;
+    margin-bottom: 20px;
+    color: #bdc3c7;
+    border-color: transparent;
+}
+
+.manage:hover{
+    background: #34495E;
+    color: #fff;
+}
+
+
+div.btn.btn-primary.btn-file{
+     background: #34495E;
+    border-color: transparent;
+}
+
+footer{
+    margin-top: 20px;
+
+}
+

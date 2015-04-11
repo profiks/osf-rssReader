@@ -25,14 +25,27 @@
               
          
                          <div id="modal"></div>
-<div class="addLink"></div>
-<div id="response">			
-			
-</div>	
+<div class="addLink pull-left"></div>
+
+<div class="exportLink pull-right"></div>
+
+<div id="response"></div>	
     
     		
     						
 		<div class="clearfix"></div>	
+                      
+                    <?php echo form_open_multipart('user/do_upload', 'calss="form_import"');?>
+
+                    
+                    <input id="input-42" type="file" name="userfile" multiple=false>
+                    
+                    
+                    
+
+                    </form>  
+
+                      
                       
                  </div> 
 </div>
