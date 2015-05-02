@@ -10,6 +10,7 @@
     <link href="<?=base_url();?>assets/css/animate.css" rel="stylesheet">
     <link href="<?=base_url();?>assets/css/loaders.min.css" rel="stylesheet">
     <link href="<?=base_url();?>assets/css/fileinput.min.css" rel="stylesheet">
+    <link href="<?=base_url();?>assets/css/bootstrap-select.min.css" rel="stylesheet">
     <link href="<?=base_url();?>assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" >
     
     

@@ -159,6 +159,9 @@ $(document).ready(function(){
             
             
             
+            
+            
+            
             modal += '<div class="form-group">';
             modal += '<label for="favourite" class="control-label col-xs-3">Favourite</label>';
             modal += '<div class="col-xs-9">';
@@ -168,7 +171,6 @@ $(document).ready(function(){
              modal +=  '<i></i>';
              modal +=  '</label>';
             
-           // modal += '<input name="favourite" id="favourite" value="1" type="checkbox" '+feeds.checked+'>';
             
             
             modal += '</div>';
@@ -198,7 +200,10 @@ $(document).ready(function(){
             modal += ' </div><!-- /.modal -->';
              
            $('div#modal').html(modal);
-          
+            $('.selectpicker').selectpicker({
+                style: 'btn-success',
+                size: 8
+            });
            $("#edit_form").modal("show");
            ValidForm('#editableInfo');
         }
@@ -225,8 +230,9 @@ $(document).ready(function(){
         
           function addFeed(){
             $.post('/index.php/user/add_feed',
-            {        title    :  $('input#title').val(),
-                     link       :  $('input#link').val()
+            {        title     :  $('input#title').val(),
+                     categorie :  $('#categorie').val(), 
+                     link      :  $('input#link').val()
             },function(data){
                 $("#add_modal").modal("hide");
                     getFeedsList();
@@ -298,6 +304,27 @@ $(document).ready(function(){
             form += '</div>';
             
             
+            form += '<div class="form-group">';            
+            form += '<label for="Categorie"  class="control-label col-xs-3">Categorie</label>';
+            form += '<div class="col-xs-8">';
+            form +=  '<select class="selectpicker show-tick" data-live-search="true" id="categorie" name="categorie">';
+            form +=   '<option value="1" selected">uncategorized</option>';
+            form +=   '<option value="2">business</option>';
+            form +=   '<option value="3">pleasures</option>';
+            form +=   '<option value="4">graphics</option>';
+            form +=   '<option value="5">websites</option>';
+            form +=   '<option value="6">gaming</option>';
+            form +=   '<option value="7">auto/moto</option>';            
+            form +=   '<option value="8">science</option>';
+            form +=   '<option value="9">politics</option>';
+            form +=   '<option value="10">technology</option>';
+            form +=   '<option value="11">healt</option>';
+            form +=   '<option value="12">nature</option>';
+            form +=   '<option value="13">sport</option>';
+              form +=  '</select>';
+            form += '</div>';
+            form += '</div>';
+            
             
             
             form += '<div class="form-group">';
@@ -325,7 +352,11 @@ $(document).ready(function(){
             form += '</div><!-- /.modal-dialog -->';
             form += ' </div><!-- /.modal -->'; 
         
-            $('div#modal').html(form);            
+            $('div#modal').html(form);  
+            $('.selectpicker').selectpicker({
+                style: 'btn-success',
+                size: 8
+            });
             $("#add_modal").modal("show");
             
             ValidForm('#infoFeed');

@@ -34,9 +34,10 @@
         <a href="<?=base_url();?>"> Home <span class="glyphicon glyphicon-home"></span></a>
              </li> 
            
-            <li <?php if ($this->uri->segment(2) == 'all_feeds') {echo"class='active'";}?>>
+                
+        <li <?php if ($this->uri->segment(2) == 'all_categories') {echo"class='active'";}?>>
        
-        <a href="<?=base_url();?>index.php/user/all_feeds/">
+        <a href="<?=base_url();?>index.php/user/all_categories/1">
         All feeds <span class="glyphicon glyphicon-bullhorn"></span></a>
         </li>
            

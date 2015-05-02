@@ -137,14 +137,16 @@ class User extends CI_controller {
     
     
     
-    
-    
-    
-    
+    /**
+    *
+    * @access public
+    * @return boolean
+    */
 	function add_feed(){	
         if ($this->input->is_ajax_request()) {
         
 			$data['title'] =  $this->input->post('title');
+            $data['categorie'] = $this->input->post('categorie');            
             $data['link'] =  $this->input->post('link');
 			$data['favourite'] = 0;		
             
@@ -203,10 +205,37 @@ class User extends CI_controller {
         $this->load->view('header',$data);
         $this->load->view('nav');
         $this->load->view('all_feeds',$data);
+        $this->load->view('footer');      
+        
+	}
+    
+    
+	function all_categories($cat = null){ 
+        if(!isset($cat) || !is_numeric($cat)){
+            $cat = 1;
+        }
+		$data['title'] = "My feeds";
+		$data['categories'] = $this->feeds_model->get_categories();
+        $data['feeds'] = $this->feeds_model->_get_feeds($cat);
+        
+        $count = '';
+        for($i=1;$i<=13; $i++){
+            
+             $count .= count($this->feeds_model->_get_feeds($i)).";";
+        }
+        
+        $data['count'] = $count;
+        $this->load->view('header',$data);
+        $this->load->view('nav');
+        $this->load->view('all_categories',$data);
         $this->load->view('footer');
         
 	}
 	
+    
+    
+    
+    
     
     
     
@@ -357,5 +386,5 @@ class User extends CI_controller {
 	
 }
 
-/* End of file main.php */
-/* Location: ./application/modules/main/controllers/main.php */
+/* End of file User.php */
+/* Location: ./application/controllers/User.php */

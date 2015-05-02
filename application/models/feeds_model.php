@@ -34,7 +34,7 @@ class Feeds_model extends CI_Model{
 		 */
 	       function get_all_feeds(){
 		            $this->db->select('*');
-                    $this->db->from('feeds'); 
+                    $this->db->from('feeds');
 		            $this->db->order_by('id','desc');
                     $query = $this->db->get();
                     
@@ -47,6 +47,40 @@ class Feeds_model extends CI_Model{
                         }
                
 	       }
+    
+             function _get_feeds($cat){
+		            $this->db->select('*');
+                    $this->db->from('feeds'); 
+               $this->db->where('categorie',$cat);
+		            $this->db->order_by('id','desc');
+                    $query = $this->db->get();
+                    
+                        if($query){
+                            if(count($query) > 0){
+                                return $query->result_array();
+                            }else{
+                               return null; 
+                            }
+                        }
+               
+	       }
+                        
+    
+            function get_categories(){
+                 $this->db->select('*');
+                    $this->db->from('categories'); 
+		            $this->db->order_by('id','asc');
+                    $query = $this->db->get();
+                    
+                        if($query){
+                            if(count($query) > 0){
+                                return $query->result_array();
+                            }else{
+                               return null; 
+                            }
+                        }
+            }
+    
 
         function get_latest_2_feeds(){
             $this->db->select('link');
